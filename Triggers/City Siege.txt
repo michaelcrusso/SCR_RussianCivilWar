@@ -1,0 +1,1507 @@
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At most, 4);
+	Bring("Current Player", "Buildings", "Kiev", At least, 1);
+	Bring("Foes", "Men", "Kiev", At least, 4);
+	Bring("Foes", "Buildings", "Kiev", At most, 0);
+	Switch("Partisans Kiev", not set);
+
+Actions:
+	Set Switch("Partisans Kiev", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kiev! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Kiev");
+	Minimap Ping("Kiev");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At most, 4);
+	Bring("Current Player", "Buildings", "Kiev", At least, 1);
+	Bring("Foes", "Men", "Kiev", At least, 4);
+	Bring("Foes", "Buildings", "Kiev", At most, 0);
+	Switch("Partisans Kiev", not set);
+
+Actions:
+	Set Switch("Partisans Kiev", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kiev! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Kiev");
+	Minimap Ping("Kiev");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At most, 4);
+	Bring("Current Player", "Buildings", "Kiev", At least, 1);
+	Bring("Foes", "Men", "Kiev", At least, 4);
+	Bring("Foes", "Buildings", "Kiev", At most, 0);
+	Switch("Partisans Kiev", not set);
+
+Actions:
+	Set Switch("Partisans Kiev", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Kiev");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At most, 4);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At least, 1);
+	Bring("Foes", "Men", "Rostov-on-Don", At least, 4);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At most, 0);
+	Switch("Partisans Rostov-on-Don", not set);
+
+Actions:
+	Set Switch("Partisans Rostov-on-Don", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Rostov-on-Don! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At most, 4);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At least, 1);
+	Bring("Foes", "Men", "Rostov-on-Don", At least, 4);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At most, 0);
+	Switch("Partisans Rostov-on-Don", not set);
+
+Actions:
+	Set Switch("Partisans Rostov-on-Don", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Rostov-on-Don! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At most, 4);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At least, 1);
+	Bring("Foes", "Men", "Rostov-on-Don", At least, 4);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At most, 0);
+	Switch("Partisans Rostov-on-Don", not set);
+
+Actions:
+	Set Switch("Partisans Rostov-on-Don", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Rostov-on-Don");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At least, 1);
+	Bring("Foes", "Men", "Yekaterinoslav", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At most, 0);
+	Switch("Partisans Yekaterinoslav", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinoslav", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinoslav! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At least, 1);
+	Bring("Foes", "Men", "Yekaterinoslav", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At most, 0);
+	Switch("Partisans Yekaterinoslav", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinoslav", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinoslav! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At least, 1);
+	Bring("Foes", "Men", "Yekaterinoslav", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At most, 0);
+	Switch("Partisans Yekaterinoslav", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinoslav", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinoslav");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At most, 4);
+	Bring("Current Player", "Buildings", "Astrakhan", At least, 1);
+	Bring("Foes", "Men", "Astrakhan", At least, 4);
+	Bring("Foes", "Buildings", "Astrakhan", At most, 0);
+	Switch("Partisans Astrakhan", not set);
+
+Actions:
+	Set Switch("Partisans Astrakhan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Astrakhan! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At most, 4);
+	Bring("Current Player", "Buildings", "Baku", At least, 1);
+	Bring("Foes", "Men", "Baku", At least, 4);
+	Bring("Foes", "Buildings", "Baku", At most, 0);
+	Switch("Partisans Baku", not set);
+
+Actions:
+	Set Switch("Partisans Baku", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Baku! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Baku");
+	Minimap Ping("Baku");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At most, 4);
+	Bring("Current Player", "Buildings", "Simferopol", At least, 1);
+	Bring("Foes", "Men", "Simferopol", At least, 4);
+	Bring("Foes", "Buildings", "Simferopol", At most, 0);
+	Switch("Partisans Simferopol", not set);
+
+Actions:
+	Set Switch("Partisans Simferopol", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simferopol! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Simferopol");
+	Minimap Ping("Simferopol");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At most, 4);
+	Bring("Current Player", "Buildings", "Kharkov", At least, 1);
+	Bring("Foes", "Men", "Kharkov", At least, 4);
+	Bring("Foes", "Buildings", "Kharkov", At most, 0);
+	Switch("Partisans Kharkov", not set);
+
+Actions:
+	Set Switch("Partisans Kharkov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kharkov! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Kharkov");
+	Minimap Ping("Kharkov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At most, 4);
+	Bring("Current Player", "Buildings", "Pskov", At least, 1);
+	Bring("Foes", "Men", "Pskov", At least, 4);
+	Bring("Foes", "Buildings", "Pskov", At most, 0);
+	Switch("Partisans Pskov", not set);
+
+Actions:
+	Set Switch("Partisans Pskov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pskov! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Pskov");
+	Minimap Ping("Pskov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At most, 4);
+	Bring("Current Player", "Buildings", "Novorossiysk", At least, 1);
+	Bring("Foes", "Men", "Novorossiysk", At least, 4);
+	Bring("Foes", "Buildings", "Novorossiysk", At most, 0);
+	Switch("Partisans Novorossiysk", not set);
+
+Actions:
+	Set Switch("Partisans Novorossiysk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Novorossiysk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Novorossiysk");
+	Minimap Ping("Novorossiysk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At most, 4);
+	Bring("Current Player", "Buildings", "Minsk", At least, 1);
+	Bring("Foes", "Men", "Minsk", At least, 4);
+	Bring("Foes", "Buildings", "Minsk", At most, 0);
+	Switch("Partisans Minsk", not set);
+
+Actions:
+	Set Switch("Partisans Minsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Minsk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Minsk");
+	Minimap Ping("Minsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At most, 4);
+	Bring("Current Player", "Buildings", "Perm", At least, 1);
+	Bring("Foes", "Men", "Perm", At least, 4);
+	Bring("Foes", "Buildings", "Perm", At most, 0);
+	Switch("Partisans Perm", not set);
+
+Actions:
+	Set Switch("Partisans Perm", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Perm! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Perm");
+	Minimap Ping("Perm");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At most, 4);
+	Bring("Current Player", "Buildings", "Moscow", At least, 1);
+	Bring("Foes", "Men", "Moscow", At least, 4);
+	Bring("Foes", "Buildings", "Moscow", At most, 0);
+	Switch("Partisans Moscow", not set);
+
+Actions:
+	Set Switch("Partisans Moscow", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Moscow! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 14, "Moscow");
+	Minimap Ping("Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At most, 4);
+	Bring("Current Player", "Buildings", "Kazan", At least, 1);
+	Bring("Foes", "Men", "Kazan", At least, 4);
+	Bring("Foes", "Buildings", "Kazan", At most, 0);
+	Switch("Partisans Kazan", not set);
+
+Actions:
+	Set Switch("Partisans Kazan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kazan! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Kazan");
+	Minimap Ping("Kazan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At most, 4);
+	Bring("Current Player", "Buildings", "Archangel'sk", At least, 1);
+	Bring("Foes", "Men", "Archangel'sk", At least, 4);
+	Bring("Foes", "Buildings", "Archangel'sk", At most, 0);
+	Switch("Partisans Archangel'sk", not set);
+
+Actions:
+	Set Switch("Partisans Archangel'sk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Archangel'sk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Archangel'sk");
+	Minimap Ping("Archangel'sk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At most, 4);
+	Bring("Current Player", "Buildings", "Ufa", At least, 1);
+	Bring("Foes", "Men", "Ufa", At least, 4);
+	Bring("Foes", "Buildings", "Ufa", At most, 0);
+	Switch("Partisans Ufa", not set);
+
+Actions:
+	Set Switch("Partisans Ufa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Ufa! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Ufa");
+	Minimap Ping("Ufa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At least, 1);
+	Bring("Foes", "Men", "Yekaterinburg", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinburg", At most, 0);
+	Switch("Partisans Yekaterinburg", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinburg! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Yekaterinburg");
+	Minimap Ping("Yekaterinburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At most, 4);
+	Bring("Current Player", "Buildings", "Simbirsk", At least, 1);
+	Bring("Foes", "Men", "Simbirsk", At least, 4);
+	Bring("Foes", "Buildings", "Simbirsk", At most, 0);
+	Switch("Partisans Simbirsk", not set);
+
+Actions:
+	Set Switch("Partisans Simbirsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simbirsk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Simbirsk");
+	Minimap Ping("Simbirsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At most, 4);
+	Bring("Current Player", "Buildings", "Samara", At least, 1);
+	Bring("Foes", "Men", "Samara", At least, 4);
+	Bring("Foes", "Buildings", "Samara", At most, 0);
+	Switch("Partisans Samara", not set);
+
+Actions:
+	Set Switch("Partisans Samara", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Samara! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Samara");
+	Minimap Ping("Samara");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At most, 4);
+	Bring("Current Player", "Buildings", "Saratov", At least, 1);
+	Bring("Foes", "Men", "Saratov", At least, 4);
+	Bring("Foes", "Buildings", "Saratov", At most, 0);
+	Switch("Partisans Saratov", not set);
+
+Actions:
+	Set Switch("Partisans Saratov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Saratov! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Saratov");
+	Minimap Ping("Saratov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh East", At least, 1);
+	Bring("Foes", "Men", "Voronezh East", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh East", At most, 0);
+	Switch("Partisans Voronezh East", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh East", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to the Eastern portion of \x006Voronezh! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 4, "Voronezh East");
+	Minimap Ping("Voronezh East");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh West", At least, 1);
+	Bring("Foes", "Men", "Voronezh West", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh West", At most, 0);
+	Switch("Partisans Voronezh West", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh West", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to the Western portion of \x006Voronezh! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 4, "Voronezh West");
+	Minimap Ping("Voronezh West");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At most, 4);
+	Bring("Current Player", "Buildings", "Smolensk", At least, 1);
+	Bring("Foes", "Men", "Smolensk", At least, 4);
+	Bring("Foes", "Buildings", "Smolensk", At most, 0);
+	Switch("Partisans Smolensk", not set);
+
+Actions:
+	Set Switch("Partisans Smolensk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Smolensk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Smolensk");
+	Minimap Ping("Smolensk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At most, 4);
+	Bring("Current Player", "Buildings", "Orenburg", At least, 1);
+	Bring("Foes", "Men", "Orenburg", At least, 4);
+	Bring("Foes", "Buildings", "Orenburg", At most, 0);
+	Switch("Partisans Orenburg", not set);
+
+Actions:
+	Set Switch("Partisans Orenburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Orenburg! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Orenburg");
+	Minimap Ping("Orenburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At most, 4);
+	Bring("Current Player", "Buildings", "Petrograd", At least, 1);
+	Bring("Foes", "Men", "Petrograd", At least, 4);
+	Bring("Foes", "Buildings", "Petrograd", At most, 0);
+	Switch("Partisans Petrograd", not set);
+
+Actions:
+	Set Switch("Partisans Petrograd", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Petrograd! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 14, "Petrograd");
+	Minimap Ping("Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At most, 4);
+	Bring("Current Player", "Buildings", "Pensa", At least, 1);
+	Bring("Foes", "Men", "Pensa", At least, 4);
+	Bring("Foes", "Buildings", "Pensa", At most, 0);
+	Switch("Switch227", not set);
+
+Actions:
+	Set Switch("Switch227", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pensa! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Pensa");
+	Minimap Ping("Pensa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At most, 4);
+	Bring("Current Player", "Buildings", "Odessa", At least, 1);
+	Bring("Foes", "Men", "Odessa", At least, 4);
+	Bring("Foes", "Buildings", "Odessa", At most, 0);
+	Switch("Partisans Odessa", not set);
+
+Actions:
+	Set Switch("Partisans Odessa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Odessa! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Odessa");
+	Minimap Ping("Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At most, 4);
+	Bring("Current Player", "Buildings", "Vologda", At least, 1);
+	Bring("Foes", "Men", "Vologda", At least, 4);
+	Bring("Foes", "Buildings", "Vologda", At most, 0);
+	Switch("Partisans Vologda", not set);
+
+Actions:
+	Set Switch("Partisans Vologda", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Vologda! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Vologda");
+	Minimap Ping("Vologda");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At most, 4);
+	Bring("Current Player", "Buildings", "Viatka", At least, 1);
+	Bring("Foes", "Men", "Viatka", At least, 4);
+	Bring("Foes", "Buildings", "Viatka", At most, 0);
+	Switch("Partisans Viatka", not set);
+
+Actions:
+	Set Switch("Partisans Viatka", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Viatka! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Viatka");
+	Minimap Ping("Viatka");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At most, 4);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At least, 1);
+	Bring("Foes", "Men", "Tsaritsyn", At least, 4);
+	Bring("Foes", "Buildings", "Tsaritsyn", At most, 0);
+	Switch("Partisans Tsaritsyn", not set);
+
+Actions:
+	Set Switch("Partisans Tsaritsyn", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Tsaritsyn! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Tsaritsyn");
+	Minimap Ping("Tsaritsyn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At most, 4);
+	Bring("Current Player", "Buildings", "Pensa", At least, 1);
+	Bring("Foes", "Men", "Pensa", At least, 4);
+	Bring("Foes", "Buildings", "Pensa", At most, 0);
+	Switch("Partisans Pensa", not set);
+
+Actions:
+	Set Switch("Partisans Pensa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pensa! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Pensa");
+	Minimap Ping("Pensa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At most, 4);
+	Bring("Current Player", "Buildings", "Pensa", At least, 1);
+	Bring("Foes", "Men", "Pensa", At least, 4);
+	Bring("Foes", "Buildings", "Pensa", At most, 0);
+	Switch("Partisans Pensa", not set);
+
+Actions:
+	Set Switch("Partisans Pensa", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Pensa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At most, 4);
+	Bring("Current Player", "Buildings", "Saratov", At least, 1);
+	Bring("Foes", "Men", "Saratov", At least, 4);
+	Bring("Foes", "Buildings", "Saratov", At most, 0);
+	Switch("Partisans Saratov", not set);
+
+Actions:
+	Set Switch("Partisans Saratov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Saratov! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Saratov");
+	Minimap Ping("Saratov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At most, 4);
+	Bring("Current Player", "Buildings", "Saratov", At least, 1);
+	Bring("Foes", "Men", "Saratov", At least, 4);
+	Bring("Foes", "Buildings", "Saratov", At most, 0);
+	Switch("Partisans Saratov", not set);
+
+Actions:
+	Set Switch("Partisans Saratov", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Saratov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At most, 4);
+	Bring("Current Player", "Buildings", "Orenburg", At least, 1);
+	Bring("Foes", "Men", "Orenburg", At least, 4);
+	Bring("Foes", "Buildings", "Orenburg", At most, 0);
+	Switch("Partisans Orenburg", not set);
+
+Actions:
+	Set Switch("Partisans Orenburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Orenburg! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Orenburg");
+	Minimap Ping("Orenburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At most, 4);
+	Bring("Current Player", "Buildings", "Orenburg", At least, 1);
+	Bring("Foes", "Men", "Orenburg", At least, 4);
+	Bring("Foes", "Buildings", "Orenburg", At most, 0);
+	Switch("Partisans Orenburg", not set);
+
+Actions:
+	Set Switch("Partisans Orenburg", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Orenburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At most, 4);
+	Bring("Current Player", "Buildings", "Odessa", At least, 1);
+	Bring("Foes", "Men", "Odessa", At least, 4);
+	Bring("Foes", "Buildings", "Odessa", At most, 0);
+	Switch("Partisans Odessa", not set);
+
+Actions:
+	Set Switch("Partisans Odessa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Odessa! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Odessa");
+	Minimap Ping("Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At most, 4);
+	Bring("Current Player", "Buildings", "Odessa", At least, 1);
+	Bring("Foes", "Men", "Odessa", At least, 4);
+	Bring("Foes", "Buildings", "Odessa", At most, 0);
+	Switch("Partisans Odessa", not set);
+
+Actions:
+	Set Switch("Partisans Odessa", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At most, 4);
+	Bring("Current Player", "Buildings", "Kharkov", At least, 1);
+	Bring("Foes", "Men", "Kharkov", At least, 4);
+	Bring("Foes", "Buildings", "Kharkov", At most, 0);
+	Switch("Partisans Kharkov", not set);
+
+Actions:
+	Set Switch("Partisans Kharkov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kharkov! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Kharkov");
+	Minimap Ping("Kharkov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At most, 4);
+	Bring("Current Player", "Buildings", "Kharkov", At least, 1);
+	Bring("Foes", "Men", "Kharkov", At least, 4);
+	Bring("Foes", "Buildings", "Kharkov", At most, 0);
+	Switch("Partisans Kharkov", not set);
+
+Actions:
+	Set Switch("Partisans Kharkov", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Kharkov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At least, 1);
+	Bring("Foes", "Men", "Yekaterinburg", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinburg", At most, 0);
+	Switch("Partisans Yekaterinburg", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinburg! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinburg");
+	Minimap Ping("Yekaterinburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At least, 1);
+	Bring("Foes", "Men", "Yekaterinburg", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinburg", At most, 0);
+	Switch("Partisans Yekaterinburg", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinburg", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At most, 4);
+	Bring("Current Player", "Buildings", "Simbirsk", At least, 1);
+	Bring("Foes", "Men", "Simbirsk", At least, 4);
+	Bring("Foes", "Buildings", "Simbirsk", At most, 0);
+	Switch("Partisans Simbirsk", not set);
+
+Actions:
+	Set Switch("Partisans Simbirsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simbirsk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Simbirsk");
+	Minimap Ping("Simbirsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At most, 4);
+	Bring("Current Player", "Buildings", "Simbirsk", At least, 1);
+	Bring("Foes", "Men", "Simbirsk", At least, 4);
+	Bring("Foes", "Buildings", "Simbirsk", At most, 0);
+	Switch("Partisans Simbirsk", not set);
+
+Actions:
+	Set Switch("Partisans Simbirsk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Simbirsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At most, 4);
+	Bring("Current Player", "Buildings", "Samara", At least, 1);
+	Bring("Foes", "Men", "Samara", At least, 4);
+	Bring("Foes", "Buildings", "Samara", At most, 0);
+	Switch("Partisans Samara", not set);
+
+Actions:
+	Set Switch("Partisans Samara", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Samara! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Samara");
+	Minimap Ping("Samara");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At most, 4);
+	Bring("Current Player", "Buildings", "Samara", At least, 1);
+	Bring("Foes", "Men", "Samara", At least, 4);
+	Bring("Foes", "Buildings", "Samara", At most, 0);
+	Switch("Partisans Samara", not set);
+
+Actions:
+	Set Switch("Partisans Samara", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Samara");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At most, 4);
+	Bring("Current Player", "Buildings", "Kazan", At least, 1);
+	Bring("Foes", "Men", "Kazan", At least, 4);
+	Bring("Foes", "Buildings", "Kazan", At most, 0);
+	Switch("Partisans Kazan", not set);
+
+Actions:
+	Set Switch("Partisans Kazan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kazan! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Kazan");
+	Minimap Ping("Kazan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At most, 4);
+	Bring("Current Player", "Buildings", "Kazan", At least, 1);
+	Bring("Foes", "Men", "Kazan", At least, 4);
+	Bring("Foes", "Buildings", "Kazan", At most, 0);
+	Switch("Partisans Kazan", not set);
+
+Actions:
+	Set Switch("Partisans Kazan", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Kazan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At most, 4);
+	Bring("Current Player", "Buildings", "Ufa", At least, 1);
+	Bring("Foes", "Men", "Ufa", At least, 4);
+	Bring("Foes", "Buildings", "Ufa", At most, 0);
+	Switch("Partisans Ufa", not set);
+
+Actions:
+	Set Switch("Partisans Ufa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Ufa! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Ufa");
+	Minimap Ping("Ufa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At most, 4);
+	Bring("Current Player", "Buildings", "Ufa", At least, 1);
+	Bring("Foes", "Men", "Ufa", At least, 4);
+	Bring("Foes", "Buildings", "Ufa", At most, 0);
+	Switch("Partisans Ufa", not set);
+
+Actions:
+	Set Switch("Partisans Ufa", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Ufa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At most, 4);
+	Bring("Current Player", "Buildings", "Astrakhan", At least, 1);
+	Bring("Foes", "Men", "Astrakhan", At least, 4);
+	Bring("Foes", "Buildings", "Astrakhan", At most, 0);
+	Switch("Partisans Astrakhan", not set);
+
+Actions:
+	Set Switch("Partisans Astrakhan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Astrakhan! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At most, 4);
+	Bring("Current Player", "Buildings", "Astrakhan", At least, 1);
+	Bring("Foes", "Men", "Astrakhan", At least, 4);
+	Bring("Foes", "Buildings", "Astrakhan", At most, 0);
+	Switch("Partisans Astrakhan", not set);
+
+Actions:
+	Set Switch("Partisans Astrakhan", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Astrakhan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At most, 4);
+	Bring("Current Player", "Buildings", "Baku", At least, 1);
+	Bring("Foes", "Men", "Baku", At least, 4);
+	Bring("Foes", "Buildings", "Baku", At most, 0);
+	Switch("Partisans Baku", not set);
+
+Actions:
+	Set Switch("Partisans Baku", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Baku! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Baku");
+	Minimap Ping("Baku");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At most, 4);
+	Bring("Current Player", "Buildings", "Baku", At least, 1);
+	Bring("Foes", "Men", "Baku", At least, 4);
+	Bring("Foes", "Buildings", "Baku", At most, 0);
+	Switch("Partisans Baku", not set);
+
+Actions:
+	Set Switch("Partisans Baku", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Baku");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At most, 4);
+	Bring("Current Player", "Buildings", "Novorossiysk", At least, 1);
+	Bring("Foes", "Men", "Novorossiysk", At least, 4);
+	Bring("Foes", "Buildings", "Novorossiysk", At most, 0);
+	Switch("Partisans Novorossiysk", not set);
+
+Actions:
+	Set Switch("Partisans Novorossiysk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Novorossiysk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Novorossiysk");
+	Minimap Ping("Novorossiysk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At most, 4);
+	Bring("Current Player", "Buildings", "Novorossiysk", At least, 1);
+	Bring("Foes", "Men", "Novorossiysk", At least, 4);
+	Bring("Foes", "Buildings", "Novorossiysk", At most, 0);
+	Switch("Partisans Novorossiysk", not set);
+
+Actions:
+	Set Switch("Partisans Novorossiysk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Novorossiysk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At most, 4);
+	Bring("Current Player", "Buildings", "Simferopol", At least, 1);
+	Bring("Foes", "Men", "Simferopol", At least, 4);
+	Bring("Foes", "Buildings", "Simferopol", At most, 0);
+	Switch("Partisans Simferopol", not set);
+
+Actions:
+	Set Switch("Partisans Simferopol", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simferopol! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Simferopol");
+	Minimap Ping("Simferopol");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At most, 4);
+	Bring("Current Player", "Buildings", "Simferopol", At least, 1);
+	Bring("Foes", "Men", "Simferopol", At least, 4);
+	Bring("Foes", "Buildings", "Simferopol", At most, 0);
+	Switch("Partisans Simferopol", not set);
+
+Actions:
+	Set Switch("Partisans Simferopol", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Simferopol");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At most, 4);
+	Bring("Current Player", "Buildings", "Smolensk", At least, 1);
+	Bring("Foes", "Men", "Smolensk", At least, 4);
+	Bring("Foes", "Buildings", "Smolensk", At most, 0);
+	Switch("Partisans Smolensk", not set);
+
+Actions:
+	Set Switch("Partisans Smolensk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Smolensk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Smolensk");
+	Minimap Ping("Smolensk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At most, 4);
+	Bring("Current Player", "Buildings", "Smolensk", At least, 1);
+	Bring("Foes", "Men", "Smolensk", At least, 4);
+	Bring("Foes", "Buildings", "Smolensk", At most, 0);
+	Switch("Partisans Smolensk", not set);
+
+Actions:
+	Set Switch("Partisans Smolensk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Smolensk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At most, 4);
+	Bring("Current Player", "Buildings", "Minsk", At least, 1);
+	Bring("Foes", "Men", "Minsk", At least, 4);
+	Bring("Foes", "Buildings", "Minsk", At most, 0);
+	Switch("Partisans Minsk", not set);
+
+Actions:
+	Set Switch("Partisans Minsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Minsk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Minsk");
+	Minimap Ping("Minsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At most, 4);
+	Bring("Current Player", "Buildings", "Minsk", At least, 1);
+	Bring("Foes", "Men", "Minsk", At least, 4);
+	Bring("Foes", "Buildings", "Minsk", At most, 0);
+	Switch("Partisans Minsk", not set);
+
+Actions:
+	Set Switch("Partisans Minsk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Minsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At most, 4);
+	Bring("Current Player", "Buildings", "Pskov", At least, 1);
+	Bring("Foes", "Men", "Pskov", At least, 4);
+	Bring("Foes", "Buildings", "Pskov", At most, 0);
+	Switch("Partisans Pskov", not set);
+
+Actions:
+	Set Switch("Partisans Pskov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pskov! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Pskov");
+	Minimap Ping("Pskov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At most, 4);
+	Bring("Current Player", "Buildings", "Pskov", At least, 1);
+	Bring("Foes", "Men", "Pskov", At least, 4);
+	Bring("Foes", "Buildings", "Pskov", At most, 0);
+	Switch("Partisans Pskov", not set);
+
+Actions:
+	Set Switch("Partisans Pskov", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Pskov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At most, 4);
+	Bring("Current Player", "Buildings", "Archangel'sk", At least, 1);
+	Bring("Foes", "Men", "Archangel'sk", At least, 4);
+	Bring("Foes", "Buildings", "Archangel'sk", At most, 0);
+	Switch("Partisans Archangel'sk", not set);
+
+Actions:
+	Set Switch("Partisans Archangel'sk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Archangel'sk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Archangel'sk");
+	Minimap Ping("Archangel'sk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At most, 4);
+	Bring("Current Player", "Buildings", "Archangel'sk", At least, 1);
+	Bring("Foes", "Men", "Archangel'sk", At least, 4);
+	Bring("Foes", "Buildings", "Archangel'sk", At most, 0);
+	Switch("Partisans Archangel'sk", not set);
+
+Actions:
+	Set Switch("Partisans Archangel'sk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Archangel'sk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At most, 4);
+	Bring("Current Player", "Buildings", "Petrograd", At least, 1);
+	Bring("Foes", "Men", "Petrograd", At least, 4);
+	Bring("Foes", "Buildings", "Petrograd", At most, 0);
+	Switch("Partisans Petrograd", not set);
+
+Actions:
+	Set Switch("Partisans Petrograd", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Petrograd! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Petrograd");
+	Minimap Ping("Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At most, 4);
+	Bring("Current Player", "Buildings", "Petrograd", At least, 1);
+	Bring("Foes", "Men", "Petrograd", At least, 4);
+	Bring("Foes", "Buildings", "Petrograd", At most, 0);
+	Switch("Partisans Petrograd", not set);
+
+Actions:
+	Set Switch("Partisans Petrograd", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At most, 4);
+	Bring("Current Player", "Buildings", "Moscow", At least, 1);
+	Bring("Foes", "Men", "Moscow", At least, 4);
+	Bring("Foes", "Buildings", "Moscow", At most, 0);
+	Switch("Partisans Moscow", not set);
+
+Actions:
+	Set Switch("Partisans Moscow", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Moscow! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Moscow");
+	Minimap Ping("Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At most, 4);
+	Bring("Current Player", "Buildings", "Moscow", At least, 1);
+	Bring("Foes", "Men", "Moscow", At least, 4);
+	Bring("Foes", "Buildings", "Moscow", At most, 0);
+	Switch("Partisans Moscow", not set);
+
+Actions:
+	Set Switch("Partisans Moscow", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At most, 4);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At least, 1);
+	Bring("Foes", "Men", "Tsaritsyn", At least, 4);
+	Bring("Foes", "Buildings", "Tsaritsyn", At most, 0);
+	Switch("Partisans Tsaritsyn", not set);
+
+Actions:
+	Set Switch("Partisans Tsaritsyn", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Tsaritsyn! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Tsaritsyn");
+	Minimap Ping("Tsaritsyn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At most, 4);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At least, 1);
+	Bring("Foes", "Men", "Tsaritsyn", At least, 4);
+	Bring("Foes", "Buildings", "Tsaritsyn", At most, 0);
+	Switch("Partisans Tsaritsyn", not set);
+
+Actions:
+	Set Switch("Partisans Tsaritsyn", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Tsaritsyn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At most, 4);
+	Bring("Current Player", "Buildings", "Viatka", At least, 1);
+	Bring("Foes", "Men", "Viatka", At least, 4);
+	Bring("Foes", "Buildings", "Viatka", At most, 0);
+	Switch("Partisans Viatka", not set);
+
+Actions:
+	Set Switch("Partisans Viatka", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Viatka! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Viatka");
+	Minimap Ping("Viatka");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At most, 4);
+	Bring("Current Player", "Buildings", "Viatka", At least, 1);
+	Bring("Foes", "Men", "Viatka", At least, 4);
+	Bring("Foes", "Buildings", "Viatka", At most, 0);
+	Switch("Partisans Viatka", not set);
+
+Actions:
+	Set Switch("Partisans Viatka", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Viatka");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At most, 4);
+	Bring("Current Player", "Buildings", "Vologda", At least, 1);
+	Bring("Foes", "Men", "Vologda", At least, 4);
+	Bring("Foes", "Buildings", "Vologda", At most, 0);
+	Switch("Partisans Vologda", not set);
+
+Actions:
+	Set Switch("Partisans Vologda", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Vologda! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Vologda");
+	Minimap Ping("Vologda");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At most, 4);
+	Bring("Current Player", "Buildings", "Vologda", At least, 1);
+	Bring("Foes", "Men", "Vologda", At least, 4);
+	Bring("Foes", "Buildings", "Vologda", At most, 0);
+	Switch("Partisans Vologda", not set);
+
+Actions:
+	Set Switch("Partisans Vologda", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Vologda");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At most, 4);
+	Bring("Current Player", "Buildings", "Perm", At least, 1);
+	Bring("Foes", "Men", "Perm", At least, 4);
+	Bring("Foes", "Buildings", "Perm", At most, 0);
+	Switch("Partisans Perm", not set);
+
+Actions:
+	Set Switch("Partisans Perm", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Perm! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Perm");
+	Minimap Ping("Perm");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At most, 4);
+	Bring("Current Player", "Buildings", "Perm", At least, 1);
+	Bring("Foes", "Men", "Perm", At least, 4);
+	Bring("Foes", "Buildings", "Perm", At most, 0);
+	Switch("Partisans Perm", not set);
+
+Actions:
+	Set Switch("Partisans Perm", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Perm");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh West", At least, 1);
+	Bring("Foes", "Men", "Voronezh West", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh West", At most, 0);
+	Switch("Partisans Voronezh West", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh West", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to Western portion of \x006Voronezh! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh West");
+	Minimap Ping("Voronezh West");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh West", At least, 1);
+	Bring("Foes", "Men", "Voronezh West", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh West", At most, 0);
+	Switch("Partisans Voronezh West", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh West", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh West");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh East", At least, 1);
+	Bring("Foes", "Men", "Voronezh East", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh East", At most, 0);
+	Switch("Partisans Voronezh East", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh East", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to the Eastern portion of \x006Voronezh! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh East");
+	Minimap Ping("Voronezh East");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh East", At least, 1);
+	Bring("Foes", "Men", "Voronezh East", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh East", At most, 0);
+	Switch("Partisans Voronezh East", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh East", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh East");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//

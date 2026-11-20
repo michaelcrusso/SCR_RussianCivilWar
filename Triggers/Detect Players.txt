@@ -1,0 +1,71 @@
+Trigger("All players"){
+Conditions:
+	Bring("Player 1", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 0);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 1 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 2", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 2);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 2 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 3", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 4);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 3 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 5", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 6);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 5 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 7", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 8);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 7 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 8", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 10);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 8 Detect");
+}
+
+//-----------------------------------------------------------------//

@@ -1,0 +1,13 @@
+Trigger("Player 1"){
+Conditions:
+	Bring("Current Player", "Terran Marine", "Detect Build Unit", At least, 1);
+	Bring("\x006Soviet Army", "Buildings", "Moscow", At least, 1);
+
+Actions:
+	Remove Unit At Location("Current Player", "Terran Marine", 1, "Detect Build Unit");
+	Move Location("Current Player", "Protoss Gateway", "Moscow", "Player Capital Spawn");
+	Create Unit("Current Player", "Terran Marine", 4, "Player Capital Spawn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//

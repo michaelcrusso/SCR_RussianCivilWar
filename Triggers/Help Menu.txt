@@ -1,0 +1,349 @@
+Trigger("Player 1"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 0);
+	Bring("Player 1", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 1", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 1", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 1", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 7"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 8);
+	Bring("Player 7", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 7", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 7", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 7", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 10);
+	Bring("Player 8", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 8", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 8", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 8", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 4);
+	Bring("Player 3", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 3", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 3", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 3", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+//-----------------------------------------------------------------//
+
+Trigger("Player 5"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 6);
+	Bring("Player 5", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 5", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 5", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 5", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 2);
+	Bring("Player 2", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 2", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 2", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 2", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 3);
+	Bring("Player 2", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 2", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY2");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 5);
+	Bring("Player 3", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 3", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY3");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 5"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 7);
+	Bring("Player 5", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 5", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY5");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 7"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 9);
+	Bring("Player 7", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 7", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY7");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 11);
+	Bring("Player 8", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 8", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY8");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 1);
+	Bring("Player 1", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 1", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY1");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 1", "Terran Dropship", All, "Help Menu PLY1", "Help Menu PLY1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 2", "Terran Dropship", All, "Help Menu PLY2", "Help Menu PLY2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 5"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 5", "Terran Dropship", All, "Help Menu PLY5", "Help Menu PLY5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 3", "Terran Dropship", All, "Help Menu PLY3", "Help Menu PLY3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 7"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 7", "Terran Dropship", All, "Help Menu PLY7", "Help Menu PLY7");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 8", "Terran Dropship", All, "Help Menu PLY8", "Help Menu PLY8");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 0);
+
+Actions:
+	Set Deaths("Current Player", "Independent Command Center", Set To, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 0);
+	Deaths("Current Player", "Protoss Probe", Exactly, 0);
+	Deaths("Current Player", "Infested Kerrigan (Infested Terran)", Exactly, 0);
+	Deaths("Current Player", "Zerg Drone", Exactly, 0);
+	Deaths("Current Player", "Infested Terran", Exactly, 0);
+	Deaths("Current Player", "Zerg Broodling", Exactly, 0);
+	Deaths("Current Player", "Terran Medic", Exactly, 0);
+
+Actions:
+	Display Text Message(Always Display, "Welcome! Below are a list of options that you might have questions about. To use them, simply \r\nunload the corresponding unit in the dropship above. Please note that you will not be able to \r\ncommunicate while this is active. To exit, simply move your civilian off the help beacon.\r\n\r\n[1] How does economy work?\r\n[2]\r\n[3]\r\n[4]\r\n[5]\r\n[6]\r\n[7]");
+	Preserve Trigger();
+	Comment("Enter Help Menu");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 0);
+	Bring("Current Player", "Dark Templar (Hero)", "Detect Help Unit", At least, 1);
+
+Actions:
+	Run AI Script At Location("EnTr", "Detect Help Unit");
+	Set Deaths("Current Player", "Dark Templar (Hero)", Set To, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 1);
+	Bring("Current Player", "Dark Templar (Hero)", "Detect Help Unit", At least, 1);
+
+Actions:
+	Run AI Script At Location("EnTr", "Detect Help Unit");
+	Set Deaths("Current Player", "Dark Templar (Hero)", Add, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 2);
+	Bring("Current Player", "Dark Templar (Hero)", "Detect Help Unit", At least, 1);
+
+Actions:
+	Run AI Script At Location("EnTr", "Detect Help Unit");
+	Set Deaths("Current Player", "Dark Templar (Hero)", Add, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At most, 0);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+
+Actions:
+	Set Deaths("Current Player", "Independent Command Center", Set To, 0);
+	Set Deaths("Current Player", "Dark Templar (Hero)", Set To, 0);
+	Set Deaths("Current Player", "Protoss Probe", Set To, 0);
+	Set Deaths("Current Player", "Infested Kerrigan (Infested Terran)", Set To, 0);
+	Set Deaths("Current Player", "Zerg Drone", Set To, 0);
+	Set Deaths("Current Player", "Infested Terran", Set To, 0);
+	Set Deaths("Current Player", "Zerg Broodling", Set To, 0);
+	Set Deaths("Current Player", "Terran Medic", Set To, 0);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nI hope that was of some assistance to you. Come again!");
+	Preserve Trigger();
+	Comment("Exit Help Menu");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1","Player 2"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 1);
+
+Actions:
+	Display Text Message(Always Display, "The economy in this map works differently for all players. Income is based \r\nupon owning cities and small rural towns littered throughout the countryside.\r\n\r\nYou, the Soviets, have more support amongst the industrial workers and \r\nconsequently derive more income from cities, and less from rural towns. Income\r\nfrom cities is dependent upon how many factories (represented by armories) a\r\ngiven city has. Income from rural towns is identical no matter how different they \r\nlook.\r\n\r\n[1] How does the economy of other sides work?\r\n[2] Back to main menu.");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 2);
+
+Actions:
+	Display Text Message(Always Display, "The White Armies derive more income from rural towns than they do from\r\ncities. \r\n\r\nPoland receives no specific bonuses from either towns nor cities.\r\n\r\nThe Western allies generate no income from captured towns and\r\ncities. They generate fixed income from oversea convoys.\r\n\r\n[1] Back to main menu");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//

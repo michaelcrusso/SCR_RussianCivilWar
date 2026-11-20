@@ -1,0 +1,447 @@
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 1", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 1");
+	Minimap Ping("Town Ukraine 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 2", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 2");
+	Minimap Ping("Town Ukraine 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 3", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 3");
+	Minimap Ping("Town Ukraine 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 4", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 4");
+	Minimap Ping("Town Ukraine 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 5", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 5", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 5", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 5", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 5");
+	Minimap Ping("Town Ukraine 5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 6", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 6", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 6", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 6", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 6");
+	Minimap Ping("Town Ukraine 6");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 1", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 1");
+	Minimap Ping("Town C Russia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 2", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 2");
+	Minimap Ping("Town C Russia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 3", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 3");
+	Minimap Ping("Town C Russia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 4", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 4");
+	Minimap Ping("Town C Russia 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 5", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 5", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 5", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 5", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 5");
+	Minimap Ping("Town C Russia 5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 6", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 6", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 6", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 6", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 6");
+	Minimap Ping("Town C Russia 6");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 7", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 7", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 7", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 7", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 7");
+	Minimap Ping("Town C Russia 7");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Crimea 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Crimea 1", At most, 0);
+	Bring("Foes", "Men", "Town Crimea 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Crimea 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Crimea!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Crimea 1");
+	Minimap Ping("Town Crimea 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Crimea 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Crimea 2", At most, 0);
+	Bring("Foes", "Men", "Town Crimea 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Crimea 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Crimea!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Crimea 2");
+	Minimap Ping("Town Crimea 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Georgia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Georgia 1", At most, 0);
+	Bring("Foes", "Men", "Town Georgia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Georgia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Caucasus!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Georgia 1");
+	Minimap Ping("Town Georgia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Georgia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Georgia 2", At most, 0);
+	Bring("Foes", "Men", "Town Georgia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Georgia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Caucasus!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Georgia 2");
+	Minimap Ping("Town Georgia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Georgia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Georgia 3", At most, 0);
+	Bring("Foes", "Men", "Town Georgia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Georgia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Caucasus!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Georgia 3");
+	Minimap Ping("Town Georgia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 1", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 1");
+	Minimap Ping("Town N Russia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 2", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 2");
+	Minimap Ping("Town N Russia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 3", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 3");
+	Minimap Ping("Town N Russia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 4", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 4");
+	Minimap Ping("Town N Russia 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 5", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 5", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 5", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 5", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 5");
+	Minimap Ping("Town N Russia 5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 1", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 1");
+	Minimap Ping("Town Siberia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 2", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 2");
+	Minimap Ping("Town Siberia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 3", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 3");
+	Minimap Ping("Town Siberia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 4", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 4");
+	Minimap Ping("Town Siberia 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town W Russia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town W Russia 1", At most, 0);
+	Bring("Foes", "Men", "Town W Russia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town W Russia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Western Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town W Russia 1");
+	Minimap Ping("Town W Russia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//

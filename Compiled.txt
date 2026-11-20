@@ -1,0 +1,4948 @@
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At least, 6);
+	Bring("Current Player", "Buildings", "Kiev", At most, 0);
+	Bring("Foes", "Men", "Kiev", At most, 0);
+	Bring("Foes", "Buildings", "Kiev", At least, 1);
+	Switch("Partisans Kiev", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Kiev!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Kiev");
+	Minimap Ping("Kiev");
+	Set Switch("Partisans Kiev", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At least, 6);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At most, 0);
+	Bring("Foes", "Men", "Rostov-on-Don", At most, 0);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At least, 1);
+	Switch("Partisans Rostov-on-Don", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Rostov-on-Don!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Set Switch("Partisans Rostov-on-Don", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At least, 6);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At most, 0);
+	Bring("Foes", "Men", "Yekaterinoslav", At most, 0);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At least, 1);
+	Switch("Partisans Yekaterinoslav", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Yekaterinoslav!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Set Switch("Partisans Yekaterinoslav", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At least, 6);
+	Bring("Current Player", "Buildings", "Astrakhan", At most, 0);
+	Bring("Foes", "Men", "Astrakhan", At most, 0);
+	Bring("Foes", "Buildings", "Astrakhan", At least, 1);
+	Switch("Partisans Astrakhan", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Astrakhan!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Set Switch("Partisans Astrakhan", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At least, 6);
+	Bring("Current Player", "Buildings", "Baku", At most, 0);
+	Bring("Foes", "Men", "Baku", At most, 0);
+	Bring("Foes", "Buildings", "Baku", At least, 1);
+	Switch("Partisans Baku", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Baku!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Baku");
+	Minimap Ping("Baku");
+	Set Switch("Partisans Baku", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At least, 6);
+	Bring("Current Player", "Buildings", "Simferopol", At most, 0);
+	Bring("Foes", "Men", "Simferopol", At most, 0);
+	Bring("Foes", "Buildings", "Simferopol", At least, 1);
+	Switch("Partisans Simferopol", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Simferopol!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Set Switch("Partisans Simferopol", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At least, 6);
+	Bring("Current Player", "Buildings", "Kharkov", At most, 0);
+	Bring("Foes", "Men", "Kharkov", At most, 0);
+	Bring("Foes", "Buildings", "Kharkov", At least, 1);
+	Switch("Partisans Kharkov", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Kharkov!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Set Switch("Partisans Kharkov", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At least, 6);
+	Bring("Current Player", "Buildings", "Pskov", At most, 0);
+	Bring("Foes", "Men", "Pskov", At most, 0);
+	Bring("Foes", "Buildings", "Pskov", At least, 1);
+	Switch("Partisans Pskov", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Pskov!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Set Switch("Partisans Pskov", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At least, 6);
+	Bring("Current Player", "Buildings", "Novorossiysk", At most, 0);
+	Bring("Foes", "Men", "Novorossiysk", At most, 0);
+	Bring("Foes", "Buildings", "Novorossiysk", At least, 1);
+	Switch("Partisans Novorossiysk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Novorossiysk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Novorossiysk");
+	Minimap Ping("Novorossiysk");
+	Set Switch("Partisans Novorossiysk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At least, 6);
+	Bring("Current Player", "Buildings", "Minsk", At most, 0);
+	Bring("Foes", "Men", "Minsk", At most, 0);
+	Bring("Foes", "Buildings", "Minsk", At least, 1);
+	Switch("Partisans Minsk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Minsk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Set Switch("Partisans Minsk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At least, 6);
+	Bring("Current Player", "Buildings", "Perm", At most, 0);
+	Bring("Foes", "Men", "Perm", At most, 0);
+	Bring("Foes", "Buildings", "Perm", At least, 1);
+	Switch("Partisans Perm", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the Arctic city of \x006Perm!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Perm");
+	Minimap Ping("Perm");
+	Set Switch("Partisans Perm", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At least, 8);
+	Bring("Current Player", "Buildings", "Moscow", At most, 0);
+	Bring("Foes", "Men", "Moscow", At most, 0);
+	Bring("Foes", "Buildings", "Moscow", At least, 1);
+	Switch("Partisans Moscow", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have conquered \x006MOSCOW, THE HEART OF RUSSIA!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Set Switch("Partisans Moscow", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At least, 6);
+	Bring("Current Player", "Buildings", "Kazan", At most, 0);
+	Bring("Foes", "Men", "Kazan", At most, 0);
+	Bring("Foes", "Buildings", "Kazan", At least, 1);
+	Switch("Partisans Kazan", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Kazan!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Set Switch("Partisans Kazan", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At least, 6);
+	Bring("Current Player", "Buildings", "Archangel'sk", At most, 0);
+	Bring("Foes", "Men", "Archangel'sk", At most, 0);
+	Bring("Foes", "Buildings", "Archangel'sk", At least, 1);
+	Switch("Partisans Archangel'sk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Archangel'sk \x00f, deep in the Russian Taiga!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Archangel'sk");
+	Minimap Ping("Archangel'sk");
+	Set Switch("Partisans Archangel'sk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At least, 6);
+	Bring("Current Player", "Buildings", "Ufa", At most, 0);
+	Bring("Foes", "Men", "Ufa", At most, 0);
+	Bring("Foes", "Buildings", "Ufa", At least, 1);
+	Switch("Partisans Ufa", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Ufa!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Ufa");
+	Minimap Ping("Ufa");
+	Set Switch("Partisans Ufa", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At least, 6);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At most, 0);
+	Bring("Foes", "Men", "Yekaterinburg", At most, 0);
+	Bring("Foes", "Buildings", "Yekaterinburg", At least, 1);
+	Switch("Partisans Yekaterinburg", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Yekaterinburg!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Yekaterinburg");
+	Minimap Ping("Yekaterinburg");
+	Set Switch("Partisans Yekaterinburg", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At least, 6);
+	Bring("Current Player", "Buildings", "Simbirsk", At most, 0);
+	Bring("Foes", "Men", "Simbirsk", At most, 0);
+	Bring("Foes", "Buildings", "Simbirsk", At least, 1);
+	Switch("Partisans Simbirsk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Simbirsk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Simbirsk");
+	Minimap Ping("Simbirsk");
+	Set Switch("Partisans Simbirsk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At least, 6);
+	Bring("Current Player", "Buildings", "Samara", At most, 0);
+	Bring("Foes", "Men", "Samara", At most, 0);
+	Bring("Foes", "Buildings", "Samara", At least, 1);
+	Switch("Partisans Samara", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Samara!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Samara");
+	Minimap Ping("Samara");
+	Set Switch("Partisans Samara", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At least, 6);
+	Bring("Current Player", "Buildings", "Saratov", At most, 0);
+	Bring("Foes", "Men", "Saratov", At most, 0);
+	Bring("Foes", "Buildings", "Saratov", At least, 1);
+	Switch("Partisans Saratov", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Saratov!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Set Switch("Partisans Saratov", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At least, 6);
+	Bring("Current Player", "Buildings", "Voronezh East", At most, 0);
+	Bring("Foes", "Men", "Voronezh East", At most, 0);
+	Bring("Foes", "Buildings", "Voronezh East", At least, 1);
+	Switch("Partisans Voronezh East", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the Eastern portion of \x006Voronezh!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Voronezh East");
+	Minimap Ping("Voronezh East");
+	Set Switch("Partisans Voronezh East", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At least, 6);
+	Bring("Current Player", "Buildings", "Voronezh West", At most, 0);
+	Bring("Foes", "Men", "Voronezh West", At most, 0);
+	Bring("Foes", "Buildings", "Voronezh West", At least, 1);
+	Switch("Partisans Voronezh West", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the Western portion of \x006Voronezh!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh West");
+	Set Switch("Partisans Voronezh West", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At least, 6);
+	Bring("Current Player", "Buildings", "Smolensk", At most, 0);
+	Bring("Foes", "Men", "Smolensk", At most, 0);
+	Bring("Foes", "Buildings", "Smolensk", At least, 1);
+	Switch("Partisans Smolensk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Smolensk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Set Switch("Partisans Smolensk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At least, 6);
+	Bring("Current Player", "Buildings", "Orenburg", At most, 0);
+	Bring("Foes", "Men", "Orenburg", At most, 0);
+	Bring("Foes", "Buildings", "Orenburg", At least, 1);
+	Switch("Partisans Orenburg", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Orenburg!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Set Switch("Partisans Orenburg", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At least, 6);
+	Bring("Current Player", "Buildings", "Petrograd", At most, 0);
+	Bring("Foes", "Men", "Petrograd", At most, 0);
+	Bring("Foes", "Buildings", "Petrograd", At least, 1);
+	Switch("Partisans Petrograd", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have conquered \x006PETROGRAD, BIRTHPLACE OF THE REVOLUTION!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Petrograd");
+	Minimap Ping("Petrograd");
+	Set Switch("Partisans Petrograd", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At least, 6);
+	Bring("Current Player", "Buildings", "Pensa", At most, 0);
+	Bring("Foes", "Men", "Pensa", At most, 0);
+	Bring("Foes", "Buildings", "Pensa", At least, 1);
+	Switch("Switch227", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Pensa!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Set Switch("Switch227", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At least, 6);
+	Bring("Current Player", "Buildings", "Odessa", At most, 0);
+	Bring("Foes", "Men", "Odessa", At most, 0);
+	Bring("Foes", "Buildings", "Odessa", At least, 1);
+	Switch("Partisans Odessa", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Odessa!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Set Switch("Partisans Odessa", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At least, 6);
+	Bring("Current Player", "Buildings", "Vologda", At most, 0);
+	Bring("Foes", "Men", "Vologda", At most, 0);
+	Bring("Foes", "Buildings", "Vologda", At least, 1);
+	Switch("Partisans Vologda", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Vologda!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Set Switch("Partisans Vologda", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At least, 6);
+	Bring("Current Player", "Buildings", "Viatka", At most, 0);
+	Bring("Foes", "Men", "Viatka", At most, 0);
+	Bring("Foes", "Buildings", "Viatka", At least, 1);
+	Switch("Partisans Viatka", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Viatka!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Viatka");
+	Minimap Ping("Viatka");
+	Set Switch("Partisans Viatka", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At least, 6);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At most, 0);
+	Bring("Foes", "Men", "Tsaritsyn", At most, 0);
+	Bring("Foes", "Buildings", "Tsaritsyn", At least, 1);
+	Switch("Partisans Tsaritsyn", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Tsaritsyn!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Tsaritsyn");
+	Minimap Ping("Tsaritsyn");
+	Set Switch("Partisans Tsaritsyn", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At most, 4);
+	Bring("Current Player", "Buildings", "Kiev", At least, 1);
+	Bring("Foes", "Men", "Kiev", At least, 4);
+	Bring("Foes", "Buildings", "Kiev", At most, 0);
+	Switch("Partisans Kiev", not set);
+
+Actions:
+	Set Switch("Partisans Kiev", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kiev! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Kiev");
+	Minimap Ping("Kiev");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At most, 4);
+	Bring("Current Player", "Buildings", "Kiev", At least, 1);
+	Bring("Foes", "Men", "Kiev", At least, 4);
+	Bring("Foes", "Buildings", "Kiev", At most, 0);
+	Switch("Partisans Kiev", not set);
+
+Actions:
+	Set Switch("Partisans Kiev", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kiev! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Kiev");
+	Minimap Ping("Kiev");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At most, 4);
+	Bring("Current Player", "Buildings", "Kiev", At least, 1);
+	Bring("Foes", "Men", "Kiev", At least, 4);
+	Bring("Foes", "Buildings", "Kiev", At most, 0);
+	Switch("Partisans Kiev", not set);
+
+Actions:
+	Set Switch("Partisans Kiev", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Kiev");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At most, 4);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At least, 1);
+	Bring("Foes", "Men", "Rostov-on-Don", At least, 4);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At most, 0);
+	Switch("Partisans Rostov-on-Don", not set);
+
+Actions:
+	Set Switch("Partisans Rostov-on-Don", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Rostov-on-Don! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At most, 4);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At least, 1);
+	Bring("Foes", "Men", "Rostov-on-Don", At least, 4);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At most, 0);
+	Switch("Partisans Rostov-on-Don", not set);
+
+Actions:
+	Set Switch("Partisans Rostov-on-Don", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Rostov-on-Don! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At most, 4);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At least, 1);
+	Bring("Foes", "Men", "Rostov-on-Don", At least, 4);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At most, 0);
+	Switch("Partisans Rostov-on-Don", not set);
+
+Actions:
+	Set Switch("Partisans Rostov-on-Don", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Rostov-on-Don");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At least, 1);
+	Bring("Foes", "Men", "Yekaterinoslav", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At most, 0);
+	Switch("Partisans Yekaterinoslav", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinoslav", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinoslav! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At least, 1);
+	Bring("Foes", "Men", "Yekaterinoslav", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At most, 0);
+	Switch("Partisans Yekaterinoslav", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinoslav", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinoslav! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At least, 1);
+	Bring("Foes", "Men", "Yekaterinoslav", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At most, 0);
+	Switch("Partisans Yekaterinoslav", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinoslav", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinoslav");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At most, 4);
+	Bring("Current Player", "Buildings", "Astrakhan", At least, 1);
+	Bring("Foes", "Men", "Astrakhan", At least, 4);
+	Bring("Foes", "Buildings", "Astrakhan", At most, 0);
+	Switch("Partisans Astrakhan", not set);
+
+Actions:
+	Set Switch("Partisans Astrakhan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Astrakhan! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At most, 4);
+	Bring("Current Player", "Buildings", "Baku", At least, 1);
+	Bring("Foes", "Men", "Baku", At least, 4);
+	Bring("Foes", "Buildings", "Baku", At most, 0);
+	Switch("Partisans Baku", not set);
+
+Actions:
+	Set Switch("Partisans Baku", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Baku! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Baku");
+	Minimap Ping("Baku");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At most, 4);
+	Bring("Current Player", "Buildings", "Simferopol", At least, 1);
+	Bring("Foes", "Men", "Simferopol", At least, 4);
+	Bring("Foes", "Buildings", "Simferopol", At most, 0);
+	Switch("Partisans Simferopol", not set);
+
+Actions:
+	Set Switch("Partisans Simferopol", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simferopol! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Simferopol");
+	Minimap Ping("Simferopol");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At most, 4);
+	Bring("Current Player", "Buildings", "Kharkov", At least, 1);
+	Bring("Foes", "Men", "Kharkov", At least, 4);
+	Bring("Foes", "Buildings", "Kharkov", At most, 0);
+	Switch("Partisans Kharkov", not set);
+
+Actions:
+	Set Switch("Partisans Kharkov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kharkov! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Kharkov");
+	Minimap Ping("Kharkov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At most, 4);
+	Bring("Current Player", "Buildings", "Pskov", At least, 1);
+	Bring("Foes", "Men", "Pskov", At least, 4);
+	Bring("Foes", "Buildings", "Pskov", At most, 0);
+	Switch("Partisans Pskov", not set);
+
+Actions:
+	Set Switch("Partisans Pskov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pskov! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Pskov");
+	Minimap Ping("Pskov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At most, 4);
+	Bring("Current Player", "Buildings", "Novorossiysk", At least, 1);
+	Bring("Foes", "Men", "Novorossiysk", At least, 4);
+	Bring("Foes", "Buildings", "Novorossiysk", At most, 0);
+	Switch("Partisans Novorossiysk", not set);
+
+Actions:
+	Set Switch("Partisans Novorossiysk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Novorossiysk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Novorossiysk");
+	Minimap Ping("Novorossiysk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At most, 4);
+	Bring("Current Player", "Buildings", "Minsk", At least, 1);
+	Bring("Foes", "Men", "Minsk", At least, 4);
+	Bring("Foes", "Buildings", "Minsk", At most, 0);
+	Switch("Partisans Minsk", not set);
+
+Actions:
+	Set Switch("Partisans Minsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Minsk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Minsk");
+	Minimap Ping("Minsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At most, 4);
+	Bring("Current Player", "Buildings", "Perm", At least, 1);
+	Bring("Foes", "Men", "Perm", At least, 4);
+	Bring("Foes", "Buildings", "Perm", At most, 0);
+	Switch("Partisans Perm", not set);
+
+Actions:
+	Set Switch("Partisans Perm", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Perm! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Perm");
+	Minimap Ping("Perm");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At most, 4);
+	Bring("Current Player", "Buildings", "Moscow", At least, 1);
+	Bring("Foes", "Men", "Moscow", At least, 4);
+	Bring("Foes", "Buildings", "Moscow", At most, 0);
+	Switch("Partisans Moscow", not set);
+
+Actions:
+	Set Switch("Partisans Moscow", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Moscow! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 14, "Moscow");
+	Minimap Ping("Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At most, 4);
+	Bring("Current Player", "Buildings", "Kazan", At least, 1);
+	Bring("Foes", "Men", "Kazan", At least, 4);
+	Bring("Foes", "Buildings", "Kazan", At most, 0);
+	Switch("Partisans Kazan", not set);
+
+Actions:
+	Set Switch("Partisans Kazan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kazan! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Kazan");
+	Minimap Ping("Kazan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At most, 4);
+	Bring("Current Player", "Buildings", "Archangel'sk", At least, 1);
+	Bring("Foes", "Men", "Archangel'sk", At least, 4);
+	Bring("Foes", "Buildings", "Archangel'sk", At most, 0);
+	Switch("Partisans Archangel'sk", not set);
+
+Actions:
+	Set Switch("Partisans Archangel'sk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Archangel'sk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Archangel'sk");
+	Minimap Ping("Archangel'sk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At most, 4);
+	Bring("Current Player", "Buildings", "Ufa", At least, 1);
+	Bring("Foes", "Men", "Ufa", At least, 4);
+	Bring("Foes", "Buildings", "Ufa", At most, 0);
+	Switch("Partisans Ufa", not set);
+
+Actions:
+	Set Switch("Partisans Ufa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Ufa! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Ufa");
+	Minimap Ping("Ufa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At least, 1);
+	Bring("Foes", "Men", "Yekaterinburg", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinburg", At most, 0);
+	Switch("Partisans Yekaterinburg", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinburg! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Yekaterinburg");
+	Minimap Ping("Yekaterinburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At most, 4);
+	Bring("Current Player", "Buildings", "Simbirsk", At least, 1);
+	Bring("Foes", "Men", "Simbirsk", At least, 4);
+	Bring("Foes", "Buildings", "Simbirsk", At most, 0);
+	Switch("Partisans Simbirsk", not set);
+
+Actions:
+	Set Switch("Partisans Simbirsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simbirsk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Simbirsk");
+	Minimap Ping("Simbirsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At most, 4);
+	Bring("Current Player", "Buildings", "Samara", At least, 1);
+	Bring("Foes", "Men", "Samara", At least, 4);
+	Bring("Foes", "Buildings", "Samara", At most, 0);
+	Switch("Partisans Samara", not set);
+
+Actions:
+	Set Switch("Partisans Samara", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Samara! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Samara");
+	Minimap Ping("Samara");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At most, 4);
+	Bring("Current Player", "Buildings", "Saratov", At least, 1);
+	Bring("Foes", "Men", "Saratov", At least, 4);
+	Bring("Foes", "Buildings", "Saratov", At most, 0);
+	Switch("Partisans Saratov", not set);
+
+Actions:
+	Set Switch("Partisans Saratov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Saratov! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Saratov");
+	Minimap Ping("Saratov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh East", At least, 1);
+	Bring("Foes", "Men", "Voronezh East", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh East", At most, 0);
+	Switch("Partisans Voronezh East", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh East", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to the Eastern portion of \x006Voronezh! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 4, "Voronezh East");
+	Minimap Ping("Voronezh East");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh West", At least, 1);
+	Bring("Foes", "Men", "Voronezh West", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh West", At most, 0);
+	Switch("Partisans Voronezh West", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh West", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to the Western portion of \x006Voronezh! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 4, "Voronezh West");
+	Minimap Ping("Voronezh West");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At most, 4);
+	Bring("Current Player", "Buildings", "Smolensk", At least, 1);
+	Bring("Foes", "Men", "Smolensk", At least, 4);
+	Bring("Foes", "Buildings", "Smolensk", At most, 0);
+	Switch("Partisans Smolensk", not set);
+
+Actions:
+	Set Switch("Partisans Smolensk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Smolensk! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Smolensk");
+	Minimap Ping("Smolensk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At most, 4);
+	Bring("Current Player", "Buildings", "Orenburg", At least, 1);
+	Bring("Foes", "Men", "Orenburg", At least, 4);
+	Bring("Foes", "Buildings", "Orenburg", At most, 0);
+	Switch("Partisans Orenburg", not set);
+
+Actions:
+	Set Switch("Partisans Orenburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Orenburg! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Orenburg");
+	Minimap Ping("Orenburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At most, 4);
+	Bring("Current Player", "Buildings", "Petrograd", At least, 1);
+	Bring("Foes", "Men", "Petrograd", At least, 4);
+	Bring("Foes", "Buildings", "Petrograd", At most, 0);
+	Switch("Partisans Petrograd", not set);
+
+Actions:
+	Set Switch("Partisans Petrograd", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Petrograd! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 14, "Petrograd");
+	Minimap Ping("Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At most, 4);
+	Bring("Current Player", "Buildings", "Pensa", At least, 1);
+	Bring("Foes", "Men", "Pensa", At least, 4);
+	Bring("Foes", "Buildings", "Pensa", At most, 0);
+	Switch("Switch227", not set);
+
+Actions:
+	Set Switch("Switch227", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pensa! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Pensa");
+	Minimap Ping("Pensa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At most, 4);
+	Bring("Current Player", "Buildings", "Odessa", At least, 1);
+	Bring("Foes", "Men", "Odessa", At least, 4);
+	Bring("Foes", "Buildings", "Odessa", At most, 0);
+	Switch("Partisans Odessa", not set);
+
+Actions:
+	Set Switch("Partisans Odessa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Odessa! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Odessa");
+	Minimap Ping("Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At most, 4);
+	Bring("Current Player", "Buildings", "Vologda", At least, 1);
+	Bring("Foes", "Men", "Vologda", At least, 4);
+	Bring("Foes", "Buildings", "Vologda", At most, 0);
+	Switch("Partisans Vologda", not set);
+
+Actions:
+	Set Switch("Partisans Vologda", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Vologda! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Vologda");
+	Minimap Ping("Vologda");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At most, 4);
+	Bring("Current Player", "Buildings", "Viatka", At least, 1);
+	Bring("Foes", "Men", "Viatka", At least, 4);
+	Bring("Foes", "Buildings", "Viatka", At most, 0);
+	Switch("Partisans Viatka", not set);
+
+Actions:
+	Set Switch("Partisans Viatka", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Viatka! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Viatka");
+	Minimap Ping("Viatka");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4","\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At most, 4);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At least, 1);
+	Bring("Foes", "Men", "Tsaritsyn", At least, 4);
+	Bring("Foes", "Buildings", "Tsaritsyn", At most, 0);
+	Switch("Partisans Tsaritsyn", not set);
+
+Actions:
+	Set Switch("Partisans Tsaritsyn", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Tsaritsyn! \r\n\x004Local \x006Red Guards \x004have risen to protect the city.");
+	Create Unit("Current Player", "Terran Marine", 10, "Tsaritsyn");
+	Minimap Ping("Tsaritsyn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At most, 4);
+	Bring("Current Player", "Buildings", "Pensa", At least, 1);
+	Bring("Foes", "Men", "Pensa", At least, 4);
+	Bring("Foes", "Buildings", "Pensa", At most, 0);
+	Switch("Partisans Pensa", not set);
+
+Actions:
+	Set Switch("Partisans Pensa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pensa! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Pensa");
+	Minimap Ping("Pensa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At most, 4);
+	Bring("Current Player", "Buildings", "Pensa", At least, 1);
+	Bring("Foes", "Men", "Pensa", At least, 4);
+	Bring("Foes", "Buildings", "Pensa", At most, 0);
+	Switch("Partisans Pensa", not set);
+
+Actions:
+	Set Switch("Partisans Pensa", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Pensa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At most, 4);
+	Bring("Current Player", "Buildings", "Saratov", At least, 1);
+	Bring("Foes", "Men", "Saratov", At least, 4);
+	Bring("Foes", "Buildings", "Saratov", At most, 0);
+	Switch("Partisans Saratov", not set);
+
+Actions:
+	Set Switch("Partisans Saratov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Saratov! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Saratov");
+	Minimap Ping("Saratov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At most, 4);
+	Bring("Current Player", "Buildings", "Saratov", At least, 1);
+	Bring("Foes", "Men", "Saratov", At least, 4);
+	Bring("Foes", "Buildings", "Saratov", At most, 0);
+	Switch("Partisans Saratov", not set);
+
+Actions:
+	Set Switch("Partisans Saratov", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Saratov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At most, 4);
+	Bring("Current Player", "Buildings", "Orenburg", At least, 1);
+	Bring("Foes", "Men", "Orenburg", At least, 4);
+	Bring("Foes", "Buildings", "Orenburg", At most, 0);
+	Switch("Partisans Orenburg", not set);
+
+Actions:
+	Set Switch("Partisans Orenburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Orenburg! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Orenburg");
+	Minimap Ping("Orenburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At most, 4);
+	Bring("Current Player", "Buildings", "Orenburg", At least, 1);
+	Bring("Foes", "Men", "Orenburg", At least, 4);
+	Bring("Foes", "Buildings", "Orenburg", At most, 0);
+	Switch("Partisans Orenburg", not set);
+
+Actions:
+	Set Switch("Partisans Orenburg", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Orenburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At most, 4);
+	Bring("Current Player", "Buildings", "Odessa", At least, 1);
+	Bring("Foes", "Men", "Odessa", At least, 4);
+	Bring("Foes", "Buildings", "Odessa", At most, 0);
+	Switch("Partisans Odessa", not set);
+
+Actions:
+	Set Switch("Partisans Odessa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Odessa! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Odessa");
+	Minimap Ping("Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At most, 4);
+	Bring("Current Player", "Buildings", "Odessa", At least, 1);
+	Bring("Foes", "Men", "Odessa", At least, 4);
+	Bring("Foes", "Buildings", "Odessa", At most, 0);
+	Switch("Partisans Odessa", not set);
+
+Actions:
+	Set Switch("Partisans Odessa", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At most, 4);
+	Bring("Current Player", "Buildings", "Kharkov", At least, 1);
+	Bring("Foes", "Men", "Kharkov", At least, 4);
+	Bring("Foes", "Buildings", "Kharkov", At most, 0);
+	Switch("Partisans Kharkov", not set);
+
+Actions:
+	Set Switch("Partisans Kharkov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kharkov! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Kharkov");
+	Minimap Ping("Kharkov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At most, 4);
+	Bring("Current Player", "Buildings", "Kharkov", At least, 1);
+	Bring("Foes", "Men", "Kharkov", At least, 4);
+	Bring("Foes", "Buildings", "Kharkov", At most, 0);
+	Switch("Partisans Kharkov", not set);
+
+Actions:
+	Set Switch("Partisans Kharkov", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Kharkov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At least, 1);
+	Bring("Foes", "Men", "Yekaterinburg", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinburg", At most, 0);
+	Switch("Partisans Yekaterinburg", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinburg", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Yekaterinburg! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinburg");
+	Minimap Ping("Yekaterinburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At most, 4);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At least, 1);
+	Bring("Foes", "Men", "Yekaterinburg", At least, 4);
+	Bring("Foes", "Buildings", "Yekaterinburg", At most, 0);
+	Switch("Partisans Yekaterinburg", not set);
+
+Actions:
+	Set Switch("Partisans Yekaterinburg", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Yekaterinburg");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At most, 4);
+	Bring("Current Player", "Buildings", "Simbirsk", At least, 1);
+	Bring("Foes", "Men", "Simbirsk", At least, 4);
+	Bring("Foes", "Buildings", "Simbirsk", At most, 0);
+	Switch("Partisans Simbirsk", not set);
+
+Actions:
+	Set Switch("Partisans Simbirsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simbirsk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Simbirsk");
+	Minimap Ping("Simbirsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At most, 4);
+	Bring("Current Player", "Buildings", "Simbirsk", At least, 1);
+	Bring("Foes", "Men", "Simbirsk", At least, 4);
+	Bring("Foes", "Buildings", "Simbirsk", At most, 0);
+	Switch("Partisans Simbirsk", not set);
+
+Actions:
+	Set Switch("Partisans Simbirsk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Simbirsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At most, 4);
+	Bring("Current Player", "Buildings", "Samara", At least, 1);
+	Bring("Foes", "Men", "Samara", At least, 4);
+	Bring("Foes", "Buildings", "Samara", At most, 0);
+	Switch("Partisans Samara", not set);
+
+Actions:
+	Set Switch("Partisans Samara", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Samara! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Samara");
+	Minimap Ping("Samara");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At most, 4);
+	Bring("Current Player", "Buildings", "Samara", At least, 1);
+	Bring("Foes", "Men", "Samara", At least, 4);
+	Bring("Foes", "Buildings", "Samara", At most, 0);
+	Switch("Partisans Samara", not set);
+
+Actions:
+	Set Switch("Partisans Samara", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Samara");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At most, 4);
+	Bring("Current Player", "Buildings", "Kazan", At least, 1);
+	Bring("Foes", "Men", "Kazan", At least, 4);
+	Bring("Foes", "Buildings", "Kazan", At most, 0);
+	Switch("Partisans Kazan", not set);
+
+Actions:
+	Set Switch("Partisans Kazan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Kazan! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Kazan");
+	Minimap Ping("Kazan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At most, 4);
+	Bring("Current Player", "Buildings", "Kazan", At least, 1);
+	Bring("Foes", "Men", "Kazan", At least, 4);
+	Bring("Foes", "Buildings", "Kazan", At most, 0);
+	Switch("Partisans Kazan", not set);
+
+Actions:
+	Set Switch("Partisans Kazan", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Kazan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At most, 4);
+	Bring("Current Player", "Buildings", "Ufa", At least, 1);
+	Bring("Foes", "Men", "Ufa", At least, 4);
+	Bring("Foes", "Buildings", "Ufa", At most, 0);
+	Switch("Partisans Ufa", not set);
+
+Actions:
+	Set Switch("Partisans Ufa", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Ufa! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Ufa");
+	Minimap Ping("Ufa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At most, 4);
+	Bring("Current Player", "Buildings", "Ufa", At least, 1);
+	Bring("Foes", "Men", "Ufa", At least, 4);
+	Bring("Foes", "Buildings", "Ufa", At most, 0);
+	Switch("Partisans Ufa", not set);
+
+Actions:
+	Set Switch("Partisans Ufa", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Ufa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At most, 4);
+	Bring("Current Player", "Buildings", "Astrakhan", At least, 1);
+	Bring("Foes", "Men", "Astrakhan", At least, 4);
+	Bring("Foes", "Buildings", "Astrakhan", At most, 0);
+	Switch("Partisans Astrakhan", not set);
+
+Actions:
+	Set Switch("Partisans Astrakhan", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Astrakhan! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At most, 4);
+	Bring("Current Player", "Buildings", "Astrakhan", At least, 1);
+	Bring("Foes", "Men", "Astrakhan", At least, 4);
+	Bring("Foes", "Buildings", "Astrakhan", At most, 0);
+	Switch("Partisans Astrakhan", not set);
+
+Actions:
+	Set Switch("Partisans Astrakhan", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Astrakhan");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At most, 4);
+	Bring("Current Player", "Buildings", "Baku", At least, 1);
+	Bring("Foes", "Men", "Baku", At least, 4);
+	Bring("Foes", "Buildings", "Baku", At most, 0);
+	Switch("Partisans Baku", not set);
+
+Actions:
+	Set Switch("Partisans Baku", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Baku! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Baku");
+	Minimap Ping("Baku");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At most, 4);
+	Bring("Current Player", "Buildings", "Baku", At least, 1);
+	Bring("Foes", "Men", "Baku", At least, 4);
+	Bring("Foes", "Buildings", "Baku", At most, 0);
+	Switch("Partisans Baku", not set);
+
+Actions:
+	Set Switch("Partisans Baku", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Baku");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At most, 4);
+	Bring("Current Player", "Buildings", "Novorossiysk", At least, 1);
+	Bring("Foes", "Men", "Novorossiysk", At least, 4);
+	Bring("Foes", "Buildings", "Novorossiysk", At most, 0);
+	Switch("Partisans Novorossiysk", not set);
+
+Actions:
+	Set Switch("Partisans Novorossiysk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Novorossiysk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Novorossiysk");
+	Minimap Ping("Novorossiysk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At most, 4);
+	Bring("Current Player", "Buildings", "Novorossiysk", At least, 1);
+	Bring("Foes", "Men", "Novorossiysk", At least, 4);
+	Bring("Foes", "Buildings", "Novorossiysk", At most, 0);
+	Switch("Partisans Novorossiysk", not set);
+
+Actions:
+	Set Switch("Partisans Novorossiysk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Novorossiysk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At most, 4);
+	Bring("Current Player", "Buildings", "Simferopol", At least, 1);
+	Bring("Foes", "Men", "Simferopol", At least, 4);
+	Bring("Foes", "Buildings", "Simferopol", At most, 0);
+	Switch("Partisans Simferopol", not set);
+
+Actions:
+	Set Switch("Partisans Simferopol", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Simferopol! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Simferopol");
+	Minimap Ping("Simferopol");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At most, 4);
+	Bring("Current Player", "Buildings", "Simferopol", At least, 1);
+	Bring("Foes", "Men", "Simferopol", At least, 4);
+	Bring("Foes", "Buildings", "Simferopol", At most, 0);
+	Switch("Partisans Simferopol", not set);
+
+Actions:
+	Set Switch("Partisans Simferopol", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Simferopol");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At most, 4);
+	Bring("Current Player", "Buildings", "Smolensk", At least, 1);
+	Bring("Foes", "Men", "Smolensk", At least, 4);
+	Bring("Foes", "Buildings", "Smolensk", At most, 0);
+	Switch("Partisans Smolensk", not set);
+
+Actions:
+	Set Switch("Partisans Smolensk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Smolensk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Smolensk");
+	Minimap Ping("Smolensk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At most, 4);
+	Bring("Current Player", "Buildings", "Smolensk", At least, 1);
+	Bring("Foes", "Men", "Smolensk", At least, 4);
+	Bring("Foes", "Buildings", "Smolensk", At most, 0);
+	Switch("Partisans Smolensk", not set);
+
+Actions:
+	Set Switch("Partisans Smolensk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Smolensk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At most, 4);
+	Bring("Current Player", "Buildings", "Minsk", At least, 1);
+	Bring("Foes", "Men", "Minsk", At least, 4);
+	Bring("Foes", "Buildings", "Minsk", At most, 0);
+	Switch("Partisans Minsk", not set);
+
+Actions:
+	Set Switch("Partisans Minsk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Minsk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Minsk");
+	Minimap Ping("Minsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At most, 4);
+	Bring("Current Player", "Buildings", "Minsk", At least, 1);
+	Bring("Foes", "Men", "Minsk", At least, 4);
+	Bring("Foes", "Buildings", "Minsk", At most, 0);
+	Switch("Partisans Minsk", not set);
+
+Actions:
+	Set Switch("Partisans Minsk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Minsk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At most, 4);
+	Bring("Current Player", "Buildings", "Pskov", At least, 1);
+	Bring("Foes", "Men", "Pskov", At least, 4);
+	Bring("Foes", "Buildings", "Pskov", At most, 0);
+	Switch("Partisans Pskov", not set);
+
+Actions:
+	Set Switch("Partisans Pskov", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Pskov! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Pskov");
+	Minimap Ping("Pskov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At most, 4);
+	Bring("Current Player", "Buildings", "Pskov", At least, 1);
+	Bring("Foes", "Men", "Pskov", At least, 4);
+	Bring("Foes", "Buildings", "Pskov", At most, 0);
+	Switch("Partisans Pskov", not set);
+
+Actions:
+	Set Switch("Partisans Pskov", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Pskov");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At most, 4);
+	Bring("Current Player", "Buildings", "Archangel'sk", At least, 1);
+	Bring("Foes", "Men", "Archangel'sk", At least, 4);
+	Bring("Foes", "Buildings", "Archangel'sk", At most, 0);
+	Switch("Partisans Archangel'sk", not set);
+
+Actions:
+	Set Switch("Partisans Archangel'sk", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Archangel'sk! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Archangel'sk");
+	Minimap Ping("Archangel'sk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At most, 4);
+	Bring("Current Player", "Buildings", "Archangel'sk", At least, 1);
+	Bring("Foes", "Men", "Archangel'sk", At least, 4);
+	Bring("Foes", "Buildings", "Archangel'sk", At most, 0);
+	Switch("Partisans Archangel'sk", not set);
+
+Actions:
+	Set Switch("Partisans Archangel'sk", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Archangel'sk");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At most, 4);
+	Bring("Current Player", "Buildings", "Petrograd", At least, 1);
+	Bring("Foes", "Men", "Petrograd", At least, 4);
+	Bring("Foes", "Buildings", "Petrograd", At most, 0);
+	Switch("Partisans Petrograd", not set);
+
+Actions:
+	Set Switch("Partisans Petrograd", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Petrograd! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Petrograd");
+	Minimap Ping("Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At most, 4);
+	Bring("Current Player", "Buildings", "Petrograd", At least, 1);
+	Bring("Foes", "Men", "Petrograd", At least, 4);
+	Bring("Foes", "Buildings", "Petrograd", At most, 0);
+	Switch("Partisans Petrograd", not set);
+
+Actions:
+	Set Switch("Partisans Petrograd", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At most, 4);
+	Bring("Current Player", "Buildings", "Moscow", At least, 1);
+	Bring("Foes", "Men", "Moscow", At least, 4);
+	Bring("Foes", "Buildings", "Moscow", At most, 0);
+	Switch("Partisans Moscow", not set);
+
+Actions:
+	Set Switch("Partisans Moscow", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Moscow! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Moscow");
+	Minimap Ping("Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At most, 4);
+	Bring("Current Player", "Buildings", "Moscow", At least, 1);
+	Bring("Foes", "Men", "Moscow", At least, 4);
+	Bring("Foes", "Buildings", "Moscow", At most, 0);
+	Switch("Partisans Moscow", not set);
+
+Actions:
+	Set Switch("Partisans Moscow", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At most, 4);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At least, 1);
+	Bring("Foes", "Men", "Tsaritsyn", At least, 4);
+	Bring("Foes", "Buildings", "Tsaritsyn", At most, 0);
+	Switch("Partisans Tsaritsyn", not set);
+
+Actions:
+	Set Switch("Partisans Tsaritsyn", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Tsaritsyn! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Tsaritsyn");
+	Minimap Ping("Tsaritsyn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At most, 4);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At least, 1);
+	Bring("Foes", "Men", "Tsaritsyn", At least, 4);
+	Bring("Foes", "Buildings", "Tsaritsyn", At most, 0);
+	Switch("Partisans Tsaritsyn", not set);
+
+Actions:
+	Set Switch("Partisans Tsaritsyn", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Tsaritsyn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At most, 4);
+	Bring("Current Player", "Buildings", "Viatka", At least, 1);
+	Bring("Foes", "Men", "Viatka", At least, 4);
+	Bring("Foes", "Buildings", "Viatka", At most, 0);
+	Switch("Partisans Viatka", not set);
+
+Actions:
+	Set Switch("Partisans Viatka", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Viatka! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Viatka");
+	Minimap Ping("Viatka");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At most, 4);
+	Bring("Current Player", "Buildings", "Viatka", At least, 1);
+	Bring("Foes", "Men", "Viatka", At least, 4);
+	Bring("Foes", "Buildings", "Viatka", At most, 0);
+	Switch("Partisans Viatka", not set);
+
+Actions:
+	Set Switch("Partisans Viatka", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Viatka");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At most, 4);
+	Bring("Current Player", "Buildings", "Vologda", At least, 1);
+	Bring("Foes", "Men", "Vologda", At least, 4);
+	Bring("Foes", "Buildings", "Vologda", At most, 0);
+	Switch("Partisans Vologda", not set);
+
+Actions:
+	Set Switch("Partisans Vologda", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Vologda! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Vologda");
+	Minimap Ping("Vologda");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At most, 4);
+	Bring("Current Player", "Buildings", "Vologda", At least, 1);
+	Bring("Foes", "Men", "Vologda", At least, 4);
+	Bring("Foes", "Buildings", "Vologda", At most, 0);
+	Switch("Partisans Vologda", not set);
+
+Actions:
+	Set Switch("Partisans Vologda", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Vologda");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At most, 4);
+	Bring("Current Player", "Buildings", "Perm", At least, 1);
+	Bring("Foes", "Men", "Perm", At least, 4);
+	Bring("Foes", "Buildings", "Perm", At most, 0);
+	Switch("Partisans Perm", not set);
+
+Actions:
+	Set Switch("Partisans Perm", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to \x006Perm! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Perm");
+	Minimap Ping("Perm");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At most, 4);
+	Bring("Current Player", "Buildings", "Perm", At least, 1);
+	Bring("Foes", "Men", "Perm", At least, 4);
+	Bring("Foes", "Buildings", "Perm", At most, 0);
+	Switch("Partisans Perm", not set);
+
+Actions:
+	Set Switch("Partisans Perm", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Perm");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh West", At least, 1);
+	Bring("Foes", "Men", "Voronezh West", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh West", At most, 0);
+	Switch("Partisans Voronezh West", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh West", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to Western portion of \x006Voronezh! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh West");
+	Minimap Ping("Voronezh West");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh West", At least, 1);
+	Bring("Foes", "Men", "Voronezh West", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh West", At most, 0);
+	Switch("Partisans Voronezh West", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh West", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh West");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh East", At least, 1);
+	Bring("Foes", "Men", "Voronezh East", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh East", At most, 0);
+	Switch("Partisans Voronezh East", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh East", set);
+	Display Text Message(Always Display, "\x00fEnemy forces are laying siege to the Eastern portion of \x006Voronezh! \r\n\x004Local \x003Loyalists \x004have risen to protect the city.");
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh East");
+	Minimap Ping("Voronezh East");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At most, 4);
+	Bring("Current Player", "Buildings", "Voronezh East", At least, 1);
+	Bring("Foes", "Men", "Voronezh East", At least, 4);
+	Bring("Foes", "Buildings", "Voronezh East", At most, 0);
+	Switch("Partisans Voronezh East", not set);
+
+Actions:
+	Set Switch("Partisans Voronezh East", set);
+	Create Unit("Current Player", "Infested Duran", 12, "Voronezh East");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 1", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 0);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 1 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 2", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 2);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 2 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 3", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 4);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 3 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 5", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 6);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 5 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 7", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 8);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 7 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 8", "Data Disc", "Anywhere", At most, 0);
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 10);
+
+Actions:
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 2);
+	Comment("Player 8 Detect");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 0);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 4);
+
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 2, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 5);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 9);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 4, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 10);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 14);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 6, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 15);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 19);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 20);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 24);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 10, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 25);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 29);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 12, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 30);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 34);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 14, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 35);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 39);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 16, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 40);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 44);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 18, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 45);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 49);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 19, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 50);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 59);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 20, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 60);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 69);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 22, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 0);
+
+Actions:
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 1);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 1, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 2);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 2, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 3);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 3, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 4);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 4, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 5);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 5, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 6);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 6, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 7);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 7, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 8);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 9);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 9, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 10);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 10, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 11);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 11, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 12);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 12, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 13);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 13, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 14);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 14, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 15);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 15, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+Trigger("\x006Soviet Army"){
+Conditions:
+	Deaths("Current Player", "Mature Crysalis", Exactly, 3);
+
+Actions:
+	Set Deaths("Current Player", "Mature Crysalis", Set to, 0);
+	Preserve Trigger();
+	Comment("Reset Spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+
+Actions:
+	Preserve Trigger();
+	Comment("If general is dead");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At most, 0);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+
+Actions:
+	Display Text Message(Always Display, "Your general has been slain! A subordinate has assumed his place, until a proper replacement can be found...");
+	Create Unit("Current Player", "Protoss High Templar", 1, "Moscow");
+	Minimap Ping("Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 0);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 1);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 2, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 2);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 4, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 3);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 6, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 4);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 5);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 10, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 6);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 12, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 7);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 14, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 8);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 16, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 9);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 18, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 10);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 20, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 11);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 21, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 12);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 22, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 13);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 23, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 14);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 24, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 15);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general's headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Samir Duran (Ghost)", 25, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("General Spawn, 5 mins");
+}
+
+//-----------------------------------------------------------------//
+
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 1);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 4);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 1, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 5);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 9);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 2, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 10);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 14);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 3, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 15);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 19);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 4, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 20);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 24);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 5, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 25);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 29);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 6, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 30);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 34);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 7, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 35);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 39);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 40);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 44);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 9, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At least, 45);
+	Bring("\x004White Army, Siberia/Ukraine", "Terran Armory", "Anywhere", At most, 49);
+
+Actions:
+	Move Location("Current Player", "Fenix (Zealot)", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 10, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Deaths("Current Player", "Mature Crysalis", Exactly, 3);
+
+Actions:
+	Set Deaths("Current Player", "Mature Crysalis", Set to, 0);
+	Preserve Trigger();
+	Comment("Reset Spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x004White Army, Siberia/Ukraine"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Current Player", "Fenix (Zealot)", "Anywhere", At most, 0);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+
+Actions:
+	Display Text Message(Always Display, "Your general has been slain! A subordinate has assumed his place, until a proper replacement can be found...");
+	Create Unit("Current Player", "Protoss High Templar", 1, "Odessa");
+	Minimap Ping("Odessa");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+Trigger("Player 1"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 0);
+	Bring("Player 1", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 1", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 1", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 1", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 7"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 8);
+	Bring("Player 7", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 7", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 7", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 7", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 10);
+	Bring("Player 8", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 8", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 8", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 8", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 4);
+	Bring("Player 3", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 3", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 3", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 3", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+//-----------------------------------------------------------------//
+
+Trigger("Player 5"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 6);
+	Bring("Player 5", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 5", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 5", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 5", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 2);
+	Bring("Player 2", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Move Location("Player 2", "Terran Dropship", "Anywhere", "Dropship Load Detect");
+	Move Location("Player 2", "Terran Dropship", "Anywhere", "Dropship Load");
+	Create Unit("Player 2", "Zerg Broodling", 1, "Dropship Load");
+	Run AI Script At Location("EnTr", "Dropship Load");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 3);
+	Bring("Player 2", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 2", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY2");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 5);
+	Bring("Player 3", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 3", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY3");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 5"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 7);
+	Bring("Player 5", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 5", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY5");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 7"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 9);
+	Bring("Player 7", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 7", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY7");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 11);
+	Bring("Player 8", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 8", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY8");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Deaths("Player 6", "Unused Terran Bldg type   1", Exactly, 1);
+	Bring("Player 1", "Any unit", "Dropship Load Detect", Exactly, 8);
+
+Actions:
+	Move Unit("Player 1", "Terran Dropship", All, "Dropship Load Detect", "Help Menu PLY1");
+	Set Deaths("Player 6", "Unused Terran Bldg type   1", Add, 1);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 1", "Terran Dropship", All, "Help Menu PLY1", "Help Menu PLY1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 2", "Terran Dropship", All, "Help Menu PLY2", "Help Menu PLY2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 5"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 5", "Terran Dropship", All, "Help Menu PLY5", "Help Menu PLY5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 3", "Terran Dropship", All, "Help Menu PLY3", "Help Menu PLY3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 7"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 7", "Terran Dropship", All, "Help Menu PLY7", "Help Menu PLY7");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Always();
+
+Actions:
+	Move Unit("Player 8", "Terran Dropship", All, "Help Menu PLY8", "Help Menu PLY8");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 0);
+
+Actions:
+	Set Deaths("Current Player", "Independent Command Center", Set To, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 0);
+	Deaths("Current Player", "Protoss Probe", Exactly, 0);
+	Deaths("Current Player", "Infested Kerrigan (Infested Terran)", Exactly, 0);
+	Deaths("Current Player", "Zerg Drone", Exactly, 0);
+	Deaths("Current Player", "Infested Terran", Exactly, 0);
+	Deaths("Current Player", "Zerg Broodling", Exactly, 0);
+	Deaths("Current Player", "Terran Medic", Exactly, 0);
+
+Actions:
+	Display Text Message(Always Display, "Welcome! Below are a list of options that you might have questions about. To use them, simply \r\nunload the corresponding unit in the dropship above. Please note that you will not be able to \r\ncommunicate while this is active. To exit, simply move your civilian off the help beacon.\r\n\r\n[1] How does economy work?\r\n[2]\r\n[3]\r\n[4]\r\n[5]\r\n[6]\r\n[7]");
+	Preserve Trigger();
+	Comment("Enter Help Menu");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 0);
+	Bring("Current Player", "Dark Templar (Hero)", "Detect Help Unit", At least, 1);
+
+Actions:
+	Run AI Script At Location("EnTr", "Detect Help Unit");
+	Set Deaths("Current Player", "Dark Templar (Hero)", Set To, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 1);
+	Bring("Current Player", "Dark Templar (Hero)", "Detect Help Unit", At least, 1);
+
+Actions:
+	Run AI Script At Location("EnTr", "Detect Help Unit");
+	Set Deaths("Current Player", "Dark Templar (Hero)", Add, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 2);
+	Bring("Current Player", "Dark Templar (Hero)", "Detect Help Unit", At least, 1);
+
+Actions:
+	Run AI Script At Location("EnTr", "Detect Help Unit");
+	Set Deaths("Current Player", "Dark Templar (Hero)", Add, 1);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At most, 0);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+
+Actions:
+	Set Deaths("Current Player", "Independent Command Center", Set To, 0);
+	Set Deaths("Current Player", "Dark Templar (Hero)", Set To, 0);
+	Set Deaths("Current Player", "Protoss Probe", Set To, 0);
+	Set Deaths("Current Player", "Infested Kerrigan (Infested Terran)", Set To, 0);
+	Set Deaths("Current Player", "Zerg Drone", Set To, 0);
+	Set Deaths("Current Player", "Infested Terran", Set To, 0);
+	Set Deaths("Current Player", "Zerg Broodling", Set To, 0);
+	Set Deaths("Current Player", "Terran Medic", Set To, 0);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nI hope that was of some assistance to you. Come again!");
+	Preserve Trigger();
+	Comment("Exit Help Menu");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1","Player 2"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 1);
+
+Actions:
+	Display Text Message(Always Display, "The economy in this map works differently for all players. Income is based \r\nupon owning cities and small rural towns littered throughout the countryside.\r\n\r\nYou, the Soviets, have more support amongst the industrial workers and \r\nconsequently derive more income from cities, and less from rural towns. Income\r\nfrom cities is dependent upon how many factories (represented by armories) a\r\ngiven city has. Income from rural towns is identical no matter how different they \r\nlook.\r\n\r\n[1] How does the economy of other sides work?\r\n[2] Back to main menu.");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Terran Civilian", "Help Init", At least, 1);
+	Deaths("Current Player", "Independent Command Center", Exactly, 1);
+	Deaths("Current Player", "Dark Templar (Hero)", Exactly, 2);
+
+Actions:
+	Display Text Message(Always Display, "The White Armies derive more income from rural towns than they do from\r\ncities. \r\n\r\nPoland receives no specific bonuses from either towns nor cities.\r\n\r\nThe Western allies generate no income from captured towns and\r\ncities. They generate fixed income from oversea convoys.\r\n\r\n[1] Back to main menu");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Preserve Trigger();
+	Comment("Hyper Trigger");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Preserve Trigger();
+	Comment("Hyper Trigger");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Preserve Trigger();
+	Comment("Hyper Trigger");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Intro Enable", not set);
+	Switch("Game Start", not set);
+
+Actions:
+	Wait(500);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n                                            \x004World War I, the Eastern Front\r\n\r\n\r\n\r\n\r\n\r\n");
+	Wait(1000);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n                                            \x004World War I, the Eastern Front\r\n\r\n\r\n\r\n\r\n\r\n");
+	Wait(1000);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n                                            \x004World War I, the Eastern Front\r\n                                                     \x006July 1st, 1917\r\n\r\n\r\n\r\n\r\n");
+	Wait(1500);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x003Tsar Nicholas II \x004has abdicated. The \x01dProvisional Government \x004vows to continue the war and launches the \x003Kerensky Offensive.\r\n\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Follow Obs", not set);
+
+Actions:
+	Move Location("Player 6", "Protoss Observer", "Anywhere", "Follow Obs");
+	Center View("Follow Obs");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Switch("Intro Enable", not set);
+
+Actions:
+	Order("Player 6", "Protoss Observer", "Anywhere", "Obs Kill", move);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Switch("Intro Enable", not set);
+	Bring("Player 6", "Protoss Observer", "Unit Move", At least, 1);
+
+Actions:
+	Order("Player 4", "Men", "Intro Attack", "German Counterattack", patrol);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 6", "Protoss Observer", "Obs Kill", At least, 1);
+
+Actions:
+	Set Switch("Follow Obs", set);
+	Remove Unit("Player 6", "Protoss Observer");
+	Set Switch("CenterViewKerensky", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1","Player 2","Player 3","Player 5","Player 7","Player 8"){
+Conditions:
+	Switch("CenterViewKerensky", set);
+
+Actions:
+	Center View("Kerensky Staging 2");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Player 4", "Men", "Kerensky Staging 2", At least, 6);
+
+Actions:
+	Create Unit with Properties("Player 6", "Jim Raynor (Marine)", 10, "German Counterattack", 1);
+	Order("Player 6", "Jim Raynor (Marine)", "Anywhere", "Kiev", patrol);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Player 4", "Men", "Anywhere", At most, 13);
+
+Actions:
+	Order("Player 4", "Men", "Anywhere", "Kiev", move);
+	Set Switch("Kerensky Fail", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Kerensky Fail", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x004The offensive is a \x006disaster.\x004 A swift \x011German\x004 counter-attack \r\n\x004breaks and routs the \x01dRussians\x004.\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 6", "Men", "Intro Attack", At least, 3);
+
+Actions:
+	Remove Unit At Location("Player 4", "Men", All, "Remove Intro Men");
+	Remove Unit At Location("Player 6", "Men", All, "Remove Intro Men");
+	Set Switch("Strikes", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Strikes", set);
+
+Actions:
+	Set Switch("Winter Palace", set);
+	Give Units to Player("Player 6", "Player 4", "Samir Duran (Ghost)", All, "Petrograd");
+	Wait(6000);
+	Set Switch("Prepare", set);
+	Set Switch("Winter Palace", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1","Player 2","Player 3","Player 5","Player 7","Player 8"){
+Conditions:
+	Switch("Strikes", set);
+
+Actions:
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x004Strikes and riots erupt in \x006Petrograd \x004against the war. \x01dKerensky \x004tries in vain to repress them.\r\n\r\n\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Give Units to Player("Player 4", "Player 12", "Arcturus Mengsk (Battlecruiser)", All, "Anywhere");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Winter Palace", set);
+	Switch("Game Start", not set);
+
+Actions:
+	Modify Unit Hit Points("Player 4", "Men", 100, 0, "Petrograd");
+	Modify Unit Hit Points("Player 6", "Men", 100, 0, "Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Kornilov Start", set);
+
+Actions:
+	Center View("Kornilov Center View");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x006August, 1917 \x004A rogue general, Kornilov, marches on \x006Petrograd\x004 in an attempt \r\n\x004to seize power. With the \x006Bolshevik's \x004help, \x01dKerensky\x004 convinces Kornilov's men\r\n\x004to stand down.\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Switch("Kornilov Start", set);
+
+Actions:
+	Create Unit("Player 6", "Samir Duran (Ghost)", 12, "Kornilov");
+	Order("Player 6", "Samir Duran (Ghost)", "Kornilov", "Location 70", move);
+	Remove Unit At Location("Player 4", "Men", All, "Petrograd");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Kornilov Start", set);
+
+Actions:
+	Wait(6000);
+	Set Switch("Prepare", set);
+	Set Switch("Winter Palace", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Prepare", set);
+
+Actions:
+	Remove Unit At Location("Player 6", "Men", All, "Kornilov");
+	Remove Unit At Location("Player 6", "Men", All, "Petrograd");
+	Remove Unit At Location("Player 4", "Men", All, "Petrograd");
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x004With \x01dKerensky's Provisional Government\x004 weak, the \x006Bolsheviks\r\n\x004decide the time is ripe to seize power.\r\n\r\n\r\n\r\n\r\n");
+	Wait(3000);
+	Set Switch("Aurora Storm", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Aurora Storm", set);
+
+Actions:
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x006October, 1917 - \x004Using a blank shot from the Russian cruiser \x006Aurora\x004 as a \r\n\x004signal, sailors and Red Guards storm the \x01fWinter Palace\x004.\r\n\r\n\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Switch("Aurora Storm", set);
+
+Actions:
+	Move Location("Player 12", "Arcturus Mengsk (Battlecruiser)", "Petrograd", "Center View");
+	Create Unit with Properties("Player 4", "Terran Valkyrie", 1, "Center View", 2);
+	Kill Unit At Location("Player 4", "Terran Valkyrie", All, "Center View");
+	Create Unit("Player 4", "Terran Marine", 4, "Location 69");
+	Create Unit("Player 4", "Terran Marine", 4, "Location 70");
+	Create Unit("Player 4", "Terran Marine", 4, "Location 71");
+	Order("Player 4", "Terran Marine", "Petrograd", "Location 72", move);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Aurora Storm", set);
+	Bring("Player 4", "Terran Marine", "Location 72", At least, 2);
+
+Actions:
+	Wait(1000);
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x004The\x01d Provisional Government \x004surrenders without a fight.\r\n\r\n\r\n\r\n\r\n");
+	Remove Unit At Location("Player 4", "Terran Marine", All, "Petrograd");
+	Play WAV("staredit\\wav\\Polyushko Polye Shorte2r_3.wav", 9123);
+	Set Switch("Russia is Born", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Russia is Born", set);
+
+Actions:
+	Wait(4000);
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n                                            \x006BOLSHEVIK RUSSIA IS BORN!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Petrograd");
+	Wait(2000);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n                                            \x006BOLSHEVIK RUSSIA IS BORN!\r\n\r\n\r\n\r\n\r\n");
+	Wait(2000);
+	Set Switch("City Coup", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("City Coup", set);
+	Bring("Player 1", "Data Disc", "Anywhere", At least, 1);
+	Bring("Player 2", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006Worker's Soviets\x004 all across Russia are seizing control of the cities!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Give Units to Player("Player 9", "Player 1", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 12", "Player 2", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kiev");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Archangel'sk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Tsaritsyn");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Simbirsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Samara");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Ufa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Yekaterinburg");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Perm");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Viatka");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Baku");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Novorossiysk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Murmansk");
+	Wait(6000);
+	Set Switch("White Movement", set);
+	Set Switch("City Coup", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("City Coup", set);
+	Bring("Player 1", "Data Disc", "Anywhere", At most, 0);
+	Bring("Player 2", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006Worker's Soviets\x004 all across Russia are seizing control of the cities!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Remove Unit At Location("Player 9", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 12", "Player 2", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Voronezh East");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh East");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kiev");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Archangel'sk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Tsaritsyn");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Simbirsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Samara");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Ufa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Yekaterinburg");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Perm");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Viatka");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Baku");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Novorossiysk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Murmansk");
+	Wait(6000);
+	Set Switch("White Movement", set);
+	Set Switch("City Coup", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("City Coup", set);
+	Bring("Player 1", "Data Disc", "Anywhere", At least, 1);
+	Bring("Player 2", "Data Disc", "Anywhere", At most, 0);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006Worker's Soviets\x004 all across Russia are seizing control of the cities!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Give Units to Player("Player 9", "Player 1", "Protoss Zealot", All, "Moscow");
+	Remove Unit At Location("Player 12", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kiev");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Archangel'sk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Tsaritsyn");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Simbirsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Samara");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Ufa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Yekaterinburg");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Perm");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Viatka");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Baku");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Novorossiysk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Murmansk");
+	Wait(6000);
+	Set Switch("White Movement", set);
+	Set Switch("City Coup", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Switch("City Coup", set);
+
+Actions:
+	Create Unit("Player 1", "Terran Marine", 4, "Kharkov");
+	Create Unit("Player 1", "Terran Marine", 4, "Smolensk");
+	Create Unit("Player 1", "Terran Marine", 4, "Odessa");
+	Create Unit("Player 1", "Terran Marine", 4, "Simferopol");
+	Create Unit("Player 1", "Terran Marine", 4, "Yekaterinoslav");
+	Create Unit("Player 1", "Terran Marine", 4, "Moscow");
+	Create Unit("Player 1", "Terran Marine", 4, "Petrograd");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Switch("City Coup", set);
+
+Actions:
+	Create Unit("Player 2", "Terran Marine", 4, "Moscow");
+	Create Unit("Player 2", "Terran Marine", 4, "Petrograd");
+	Create Unit("Player 2", "Terran Marine", 4, "Pensa");
+	Create Unit("Player 2", "Terran Marine", 4, "Kazan");
+	Create Unit("Player 2", "Terran Marine", 4, "Astrakhan");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Switch("Russia is Born", set);
+
+Actions:
+	Wait(8000);
+	Run AI Script("-Vi3");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("White Movement", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x003Anti-Soviet Forces\x004 are rising to combat the \x006Bolsheviks \x004in Ukraine and the Far East!\r\n\r\n\r\n\r\n");
+	Minimap Ping("Rural Town Detect Whites");
+	Minimap Ping("Orenburg");
+	Minimap Ping("Odessa");
+	Minimap Ping("Remove Intro Men");
+	Wait(6000);
+	Set Switch("White Movement 2", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("White Movement 2", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x003The Cossacks\x004 oppose the Bolshevik government and raise the Volunteer Army along the River Don!\r\n\r\n\r\n\r\n");
+	Minimap Ping("Rostov-on-Don");
+	Minimap Ping("Novorossiysk");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Bring("Player 3", "Data Disc", "Anywhere", At least, 1);
+	Switch("White Movement", set);
+
+Actions:
+	Create Unit("Player 3", "Samir Duran (Ghost)", 10, "SpawnPLY3 Far East2");
+	Order("Player 3", "Samir Duran (Ghost)", "SpawnPLY3 Far East2", "Rural Town Detect Whites", attack);
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "SpawnPLY3 Far East1");
+	Order("Player 3", "Samir Duran (Ghost)", "SpawnPLY3 Far East1", "Orenburg", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Bring("Player 3", "Data Disc", "Anywhere", At most, 0);
+	Switch("White Movement", set);
+
+Actions:
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "SpawnPLY3 Far East2");
+	Order("Player 8", "Samir Duran (Ghost)", "SpawnPLY3 Far East2", "Rural Town Detect Whites", attack);
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "SpawnPLY3 Far East1");
+	Order("Player 8", "Samir Duran (Ghost)", "SpawnPLY3 Far East1", "Orenburg", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Switch("White Movement", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Give Units to Player("Foes", "Player 8", "Buildings", All, "Odessa");
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "Odessa");
+	Order("Player 8", "Samir Duran (Ghost)", "Odessa", "Kiev", attack);
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "Remove Intro Men");
+	Order("Player 8", "Samir Duran (Ghost)", "Remove Intro Men", "Kiev", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Switch("White Movement", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At most, 0);
+
+Actions:
+	Give Units to Player("Foes", "Player 3", "Buildings", All, "Odessa");
+	Give Units to Player("Player 12", "Player 3", "Fenix (Zealot)", 1, "Odessa");
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "Odessa");
+	Order("Player 3", "Samir Duran (Ghost)", "Odessa", "Kiev", attack);
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "Remove Intro Men");
+	Order("Player 3", "Samir Duran (Ghost)", "Remove Intro Men", "Kiev", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Give Units to Player("Foes", "Player 8", "Buildings", All, "Novorossiysk");
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "Novorossiysk");
+	Order("Player 8", "Samir Duran (Ghost)", "Novorossiysk", "Rostov-on-Don", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At most, 0);
+
+Actions:
+	Give Units to Player("Foes", "Player 3", "Buildings", All, "Novorossiysk");
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "Novorossiysk");
+	Order("Player 3", "Samir Duran (Ghost)", "Novorossiysk", "Rostov-on-Don", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("\x006Soviet Army", Ally);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 6", Enemy);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 4", Enemy);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 4", Ally);
+	Run AI Script("+Vi3");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Always();
+
+Actions:
+	Run AI Script("+Vi3");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 2", Ally);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 1", Ally);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Always();
+
+Actions:
+	Set Countdown Timer(Set To, 30);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 1", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 1");
+	Minimap Ping("Town Ukraine 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 2", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 2");
+	Minimap Ping("Town Ukraine 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 3", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 3");
+	Minimap Ping("Town Ukraine 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 4", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 4");
+	Minimap Ping("Town Ukraine 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 5", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 5", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 5", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 5", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 5");
+	Minimap Ping("Town Ukraine 5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Ukraine 6", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Ukraine 6", At most, 0);
+	Bring("Foes", "Men", "Town Ukraine 6", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Ukraine 6", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Ukraine!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Ukraine 6");
+	Minimap Ping("Town Ukraine 6");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 1", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 1");
+	Minimap Ping("Town C Russia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 2", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 2");
+	Minimap Ping("Town C Russia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 3", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 3");
+	Minimap Ping("Town C Russia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 4", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 4");
+	Minimap Ping("Town C Russia 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 5", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 5", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 5", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 5", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 5");
+	Minimap Ping("Town C Russia 5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 6", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 6", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 6", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 6", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 6");
+	Minimap Ping("Town C Russia 6");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town C Russia 7", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town C Russia 7", At most, 0);
+	Bring("Foes", "Men", "Town C Russia 7", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town C Russia 7", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Central Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town C Russia 7");
+	Minimap Ping("Town C Russia 7");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Crimea 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Crimea 1", At most, 0);
+	Bring("Foes", "Men", "Town Crimea 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Crimea 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Crimea!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Crimea 1");
+	Minimap Ping("Town Crimea 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Crimea 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Crimea 2", At most, 0);
+	Bring("Foes", "Men", "Town Crimea 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Crimea 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Crimea!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Crimea 2");
+	Minimap Ping("Town Crimea 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Georgia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Georgia 1", At most, 0);
+	Bring("Foes", "Men", "Town Georgia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Georgia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Caucasus!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Georgia 1");
+	Minimap Ping("Town Georgia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Georgia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Georgia 2", At most, 0);
+	Bring("Foes", "Men", "Town Georgia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Georgia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Caucasus!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Georgia 2");
+	Minimap Ping("Town Georgia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Georgia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Georgia 3", At most, 0);
+	Bring("Foes", "Men", "Town Georgia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Georgia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x003Caucasus!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Georgia 3");
+	Minimap Ping("Town Georgia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 1", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 1");
+	Minimap Ping("Town N Russia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 2", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 2");
+	Minimap Ping("Town N Russia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 3", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 3");
+	Minimap Ping("Town N Russia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 4", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 4");
+	Minimap Ping("Town N Russia 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town N Russia 5", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town N Russia 5", At most, 0);
+	Bring("Foes", "Men", "Town N Russia 5", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town N Russia 5", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Northern Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town N Russia 5");
+	Minimap Ping("Town N Russia 5");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 1", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 1");
+	Minimap Ping("Town Siberia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 2", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 2", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 2", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 2", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 2");
+	Minimap Ping("Town Siberia 2");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 3", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 3", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 3", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 3", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 3");
+	Minimap Ping("Town Siberia 3");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town Siberia 4", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town Siberia 4", At most, 0);
+	Bring("Foes", "Men", "Town Siberia 4", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town Siberia 4", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in the \x011Urals!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town Siberia 4");
+	Minimap Ping("Town Siberia 4");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Town W Russia 1", At least, 6);
+	Bring("Current Player", "Zerg Cerebrate Daggoth", "Town W Russia 1", At most, 0);
+	Bring("Foes", "Men", "Town W Russia 1", At most, 0);
+	Bring("Foes", "Zerg Cerebrate Daggoth", "Town W Russia 1", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\x00fSmall town\x004 captured in \x006Western Russia!");
+	Give Units to Player("Foes", "Current Player", "Zerg Cerebrate Daggoth", All, "Town W Russia 1");
+	Minimap Ping("Town W Russia 1");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Set Deaths("Player 4", "Mineral Chunk (Type 1)", Set to, 12);
+	Comment("Set timer at start to 1 second");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Switch("White Movement 2", set);
+
+Actions:
+	Set Deaths("Player 4", "Mineral Chunk (Type 1)", Subtract, 1);
+	Preserve Trigger();
+	Comment("Timer, 12");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Deaths("Player 4", "Mineral Chunk (Type 1)", At most, 0);
+	Switch("White Movement 2", set);
+
+Actions:
+	Set Deaths("Player 4", "Mineral Chunk (Type 1)", Add, 12);
+	Set Deaths("Player 4", "Mineral Chunk (Type 2)", Add, 1);
+	Set Deaths("Player 4", "Mineral Field (Type 1)", Add, 1);
+	Preserve Trigger();
+	Comment("Type 1 chunk reset second, Type 2 chunk add 1 elapsed second, Type 1 field add general spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Deaths("Player 4", "Mineral Field (Type 1)", Exactly, 60);
+
+Actions:
+	Set Deaths("Player 4", "Mineral Field (Type 1)", Set to, 0);
+	Set Deaths("Player 1", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 2", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 3", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 5", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 7", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 8", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Activate general spawns, reset spawn counter");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Bring("Current Player", "Terran Marine", "Detect Build Unit", At least, 1);
+	Bring("\x006Soviet Army", "Buildings", "Moscow", At least, 1);
+
+Actions:
+	Remove Unit At Location("Current Player", "Terran Marine", 1, "Detect Build Unit");
+	Move Location("Current Player", "Protoss Gateway", "Moscow", "Player Capital Spawn");
+	Create Unit("Current Player", "Terran Marine", 4, "Player Capital Spawn");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+

@@ -1,0 +1,615 @@
+Trigger("All players"){
+Conditions:
+	Switch("Intro Enable", not set);
+	Switch("Game Start", not set);
+
+Actions:
+	Wait(500);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n                                            \x004World War I, the Eastern Front\r\n\r\n\r\n\r\n\r\n\r\n");
+	Wait(1000);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n                                            \x004World War I, the Eastern Front\r\n\r\n\r\n\r\n\r\n\r\n");
+	Wait(1000);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n                                            \x004World War I, the Eastern Front\r\n                                                     \x006July 1st, 1917\r\n\r\n\r\n\r\n\r\n");
+	Wait(1500);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x003Tsar Nicholas II \x004has abdicated. The \x01dProvisional Government \x004vows to continue the war and launches the \x003Kerensky Offensive.\r\n\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Follow Obs", not set);
+
+Actions:
+	Move Location("Player 6", "Protoss Observer", "Anywhere", "Follow Obs");
+	Center View("Follow Obs");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Switch("Intro Enable", not set);
+
+Actions:
+	Order("Player 6", "Protoss Observer", "Anywhere", "Obs Kill", move);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Switch("Intro Enable", not set);
+	Bring("Player 6", "Protoss Observer", "Unit Move", At least, 1);
+
+Actions:
+	Order("Player 4", "Men", "Intro Attack", "German Counterattack", patrol);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 6", "Protoss Observer", "Obs Kill", At least, 1);
+
+Actions:
+	Set Switch("Follow Obs", set);
+	Remove Unit("Player 6", "Protoss Observer");
+	Set Switch("CenterViewKerensky", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1","Player 2","Player 3","Player 5","Player 7","Player 8"){
+Conditions:
+	Switch("CenterViewKerensky", set);
+
+Actions:
+	Center View("Kerensky Staging 2");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Player 4", "Men", "Kerensky Staging 2", At least, 6);
+
+Actions:
+	Create Unit with Properties("Player 6", "Jim Raynor (Marine)", 10, "German Counterattack", 1);
+	Order("Player 6", "Jim Raynor (Marine)", "Anywhere", "Kiev", patrol);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Bring("Player 4", "Men", "Anywhere", At most, 13);
+
+Actions:
+	Order("Player 4", "Men", "Anywhere", "Kiev", move);
+	Set Switch("Kerensky Fail", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Kerensky Fail", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x004The offensive is a \x006disaster.\x004 A swift \x011German\x004 counter-attack \r\n\x004breaks and routs the \x01dRussians\x004.\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Bring("Player 6", "Men", "Intro Attack", At least, 3);
+
+Actions:
+	Remove Unit At Location("Player 4", "Men", All, "Remove Intro Men");
+	Remove Unit At Location("Player 6", "Men", All, "Remove Intro Men");
+	Set Switch("Strikes", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Strikes", set);
+
+Actions:
+	Set Switch("Winter Palace", set);
+	Give Units to Player("Player 6", "Player 4", "Samir Duran (Ghost)", All, "Petrograd");
+	Wait(6000);
+	Set Switch("Prepare", set);
+	Set Switch("Winter Palace", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1","Player 2","Player 3","Player 5","Player 7","Player 8"){
+Conditions:
+	Switch("Strikes", set);
+
+Actions:
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x004Strikes and riots erupt in \x006Petrograd \x004against the war. \x01dKerensky \x004tries in vain to repress them.\r\n\r\n\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Give Units to Player("Player 4", "Player 12", "Arcturus Mengsk (Battlecruiser)", All, "Anywhere");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Winter Palace", set);
+	Switch("Game Start", not set);
+
+Actions:
+	Modify Unit Hit Points("Player 4", "Men", 100, 0, "Petrograd");
+	Modify Unit Hit Points("Player 6", "Men", 100, 0, "Petrograd");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Kornilov Start", set);
+
+Actions:
+	Center View("Kornilov Center View");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x006August, 1917 \x004A rogue general, Kornilov, marches on \x006Petrograd\x004 in an attempt \r\n\x004to seize power. With the \x006Bolshevik's \x004help, \x01dKerensky\x004 convinces Kornilov's men\r\n\x004to stand down.\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Switch("Kornilov Start", set);
+
+Actions:
+	Create Unit("Player 6", "Samir Duran (Ghost)", 12, "Kornilov");
+	Order("Player 6", "Samir Duran (Ghost)", "Kornilov", "Location 70", move);
+	Remove Unit At Location("Player 4", "Men", All, "Petrograd");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Kornilov Start", set);
+
+Actions:
+	Wait(6000);
+	Set Switch("Prepare", set);
+	Set Switch("Winter Palace", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Prepare", set);
+
+Actions:
+	Remove Unit At Location("Player 6", "Men", All, "Kornilov");
+	Remove Unit At Location("Player 6", "Men", All, "Petrograd");
+	Remove Unit At Location("Player 4", "Men", All, "Petrograd");
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x004With \x01dKerensky's Provisional Government\x004 weak, the \x006Bolsheviks\r\n\x004decide the time is ripe to seize power.\r\n\r\n\r\n\r\n\r\n");
+	Wait(3000);
+	Set Switch("Aurora Storm", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Aurora Storm", set);
+
+Actions:
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\x006October, 1917 - \x004Using a blank shot from the Russian cruiser \x006Aurora\x004 as a \r\n\x004signal, sailors and Red Guards storm the \x01fWinter Palace\x004.\r\n\r\n\r\n\r\n\r\n");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Switch("Aurora Storm", set);
+
+Actions:
+	Move Location("Player 12", "Arcturus Mengsk (Battlecruiser)", "Petrograd", "Center View");
+	Create Unit with Properties("Player 4", "Terran Valkyrie", 1, "Center View", 2);
+	Kill Unit At Location("Player 4", "Terran Valkyrie", All, "Center View");
+	Create Unit("Player 4", "Terran Marine", 4, "Location 69");
+	Create Unit("Player 4", "Terran Marine", 4, "Location 70");
+	Create Unit("Player 4", "Terran Marine", 4, "Location 71");
+	Order("Player 4", "Terran Marine", "Petrograd", "Location 72", move);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Aurora Storm", set);
+	Bring("Player 4", "Terran Marine", "Location 72", At least, 2);
+
+Actions:
+	Wait(1000);
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x004The\x01d Provisional Government \x004surrenders without a fight.\r\n\r\n\r\n\r\n\r\n");
+	Remove Unit At Location("Player 4", "Terran Marine", All, "Petrograd");
+	Play WAV("staredit\\wav\\Polyushko Polye Shorte2r_3.wav", 9123);
+	Set Switch("Russia is Born", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("Russia is Born", set);
+
+Actions:
+	Wait(4000);
+	Center View("Petrograd");
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n                                            \x006BOLSHEVIK RUSSIA IS BORN!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Petrograd");
+	Wait(2000);
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n                                            \x006BOLSHEVIK RUSSIA IS BORN!\r\n\r\n\r\n\r\n\r\n");
+	Wait(2000);
+	Set Switch("City Coup", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("City Coup", set);
+	Bring("Player 1", "Data Disc", "Anywhere", At least, 1);
+	Bring("Player 2", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006Worker's Soviets\x004 all across Russia are seizing control of the cities!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Give Units to Player("Player 9", "Player 1", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 12", "Player 2", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kiev");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Archangel'sk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Tsaritsyn");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Simbirsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Samara");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Ufa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Yekaterinburg");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Perm");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Viatka");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Baku");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Novorossiysk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Murmansk");
+	Wait(6000);
+	Set Switch("White Movement", set);
+	Set Switch("City Coup", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("City Coup", set);
+	Bring("Player 1", "Data Disc", "Anywhere", At most, 0);
+	Bring("Player 2", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006Worker's Soviets\x004 all across Russia are seizing control of the cities!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Remove Unit At Location("Player 9", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 12", "Player 2", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Voronezh East");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh East");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Give Units to Player("Player 9", "Player 2", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kiev");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Archangel'sk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Tsaritsyn");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Simbirsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Samara");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Ufa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Yekaterinburg");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Perm");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Viatka");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Baku");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Novorossiysk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Murmansk");
+	Wait(6000);
+	Set Switch("White Movement", set);
+	Set Switch("City Coup", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("City Coup", set);
+	Bring("Player 1", "Data Disc", "Anywhere", At least, 1);
+	Bring("Player 2", "Data Disc", "Anywhere", At most, 0);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006Worker's Soviets\x004 all across Russia are seizing control of the cities!\r\n\r\n\r\n\r\n\r\n");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Give Units to Player("Player 9", "Player 1", "Protoss Zealot", All, "Moscow");
+	Remove Unit At Location("Player 12", "Protoss Zealot", All, "Moscow");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh East");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Give Units to Player("Player 9", "Player 1", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kiev");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Archangel'sk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Tsaritsyn");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Simbirsk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Samara");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Ufa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Yekaterinburg");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Perm");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Viatka");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Baku");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Novorossiysk");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Murmansk");
+	Wait(6000);
+	Set Switch("White Movement", set);
+	Set Switch("City Coup", clear);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Switch("City Coup", set);
+
+Actions:
+	Create Unit("Player 1", "Terran Marine", 4, "Kharkov");
+	Create Unit("Player 1", "Terran Marine", 4, "Smolensk");
+	Create Unit("Player 1", "Terran Marine", 4, "Odessa");
+	Create Unit("Player 1", "Terran Marine", 4, "Simferopol");
+	Create Unit("Player 1", "Terran Marine", 4, "Yekaterinoslav");
+	Create Unit("Player 1", "Terran Marine", 4, "Moscow");
+	Create Unit("Player 1", "Terran Marine", 4, "Petrograd");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Switch("City Coup", set);
+
+Actions:
+	Create Unit("Player 2", "Terran Marine", 4, "Moscow");
+	Create Unit("Player 2", "Terran Marine", 4, "Petrograd");
+	Create Unit("Player 2", "Terran Marine", 4, "Pensa");
+	Create Unit("Player 2", "Terran Marine", 4, "Kazan");
+	Create Unit("Player 2", "Terran Marine", 4, "Astrakhan");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Siberia/Allies/Poland/Ukraine"){
+Conditions:
+	Switch("Russia is Born", set);
+
+Actions:
+	Wait(8000);
+	Run AI Script("-Vi3");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("White Movement", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x003Anti-Soviet Forces\x004 are rising to combat the \x006Bolsheviks \x004in Ukraine and the Far East!\r\n\r\n\r\n\r\n");
+	Minimap Ping("Rural Town Detect Whites");
+	Minimap Ping("Orenburg");
+	Minimap Ping("Odessa");
+	Minimap Ping("Remove Intro Men");
+	Wait(6000);
+	Set Switch("White Movement 2", set);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Switch("White Movement 2", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x003The Cossacks\x004 oppose the Bolshevik government and raise the Volunteer Army along the River Don!\r\n\r\n\r\n\r\n");
+	Minimap Ping("Rostov-on-Don");
+	Minimap Ping("Novorossiysk");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Bring("Player 3", "Data Disc", "Anywhere", At least, 1);
+	Switch("White Movement", set);
+
+Actions:
+	Create Unit("Player 3", "Samir Duran (Ghost)", 10, "SpawnPLY3 Far East2");
+	Order("Player 3", "Samir Duran (Ghost)", "SpawnPLY3 Far East2", "Rural Town Detect Whites", attack);
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "SpawnPLY3 Far East1");
+	Order("Player 3", "Samir Duran (Ghost)", "SpawnPLY3 Far East1", "Orenburg", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Bring("Player 3", "Data Disc", "Anywhere", At most, 0);
+	Switch("White Movement", set);
+
+Actions:
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "SpawnPLY3 Far East2");
+	Order("Player 8", "Samir Duran (Ghost)", "SpawnPLY3 Far East2", "Rural Town Detect Whites", attack);
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "SpawnPLY3 Far East1");
+	Order("Player 8", "Samir Duran (Ghost)", "SpawnPLY3 Far East1", "Orenburg", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Switch("White Movement", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Give Units to Player("Foes", "Player 8", "Buildings", All, "Odessa");
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "Odessa");
+	Order("Player 8", "Samir Duran (Ghost)", "Odessa", "Kiev", attack);
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "Remove Intro Men");
+	Order("Player 8", "Samir Duran (Ghost)", "Remove Intro Men", "Kiev", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Switch("White Movement", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At most, 0);
+
+Actions:
+	Give Units to Player("Foes", "Player 3", "Buildings", All, "Odessa");
+	Give Units to Player("Player 12", "Player 3", "Fenix (Zealot)", 1, "Odessa");
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "Odessa");
+	Order("Player 3", "Samir Duran (Ghost)", "Odessa", "Kiev", attack);
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "Remove Intro Men");
+	Order("Player 3", "Samir Duran (Ghost)", "Remove Intro Men", "Kiev", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 8"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At least, 1);
+
+Actions:
+	Give Units to Player("Foes", "Player 8", "Buildings", All, "Novorossiysk");
+	Create Unit("Player 8", "Samir Duran (Ghost)", 16, "Novorossiysk");
+	Order("Player 8", "Samir Duran (Ghost)", "Novorossiysk", "Rostov-on-Don", attack);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 3"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Player 8", "Data Disc", "Anywhere", At most, 0);
+
+Actions:
+	Give Units to Player("Foes", "Player 3", "Buildings", All, "Novorossiysk");
+	Create Unit("Player 3", "Samir Duran (Ghost)", 16, "Novorossiysk");
+	Order("Player 3", "Samir Duran (Ghost)", "Novorossiysk", "Rostov-on-Don", attack);
+}
+
+//-----------------------------------------------------------------//

@@ -1,0 +1,548 @@
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 0);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 4);
+
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 2, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 5);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 9);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 4, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 10);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 14);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 6, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 15);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 19);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 20);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 24);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 10, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 25);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 29);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 12, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 30);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 34);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 14, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 35);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 39);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 16, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 40);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 44);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 18, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 45);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 49);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 19, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 50);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 59);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 20, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At least, 60);
+	Bring("\x006Soviet Army", "Terran Armory", "Anywhere", At most, 69);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Display Text Message(Always Display, "Volunteers have been deployed to your general headquarters!");
+	Minimap Ping("General");
+	Create Unit("Current Player", "Terran Marine", 22, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn industrial units, move on to rural units");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 0);
+
+Actions:
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 1);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 1, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 2);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 2, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 3);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 3, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 4);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 4, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 5);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 5, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 6);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 6, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 7);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 7, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 8);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 8, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 9);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 9, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 10);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 10, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 11);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 11, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 12);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 12, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 13);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 13, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 14);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 14, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 2);
+	Bring("\x006Soviet Army", "Zerg Cerebrate Daggoth", "Anywhere", Exactly, 15);
+
+Actions:
+	Move Location("Current Player", "Protoss Zealot", "Anywhere", "General");
+	Create Unit("Current Player", "Infested Duran", 15, "General");
+	Set Deaths("Current Player", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Spawn rural units, move on to reset spawn");
+}
+
+//-----------------------------------------------------------------//
+Trigger("\x006Soviet Army"){
+Conditions:
+	Deaths("Current Player", "Mature Crysalis", Exactly, 3);
+
+Actions:
+	Set Deaths("Current Player", "Mature Crysalis", Set to, 0);
+	Preserve Trigger();
+	Comment("Reset Spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At least, 1);
+	Deaths("Current Player", "Mature Crysalis", Exactly, 1);
+
+Actions:
+	Preserve Trigger();
+	Comment("If general is dead");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Switch("White Movement 2", set);
+	Bring("Current Player", "Protoss Zealot", "Anywhere", At most, 0);
+	Bring("Current Player", "Protoss High Templar", "Anywhere", At most, 0);
+
+Actions:
+	Display Text Message(Always Display, "Your general has been slain! A subordinate has assumed his place, until a proper replacement can be found...");
+	Create Unit("Current Player", "Protoss High Templar", 1, "Moscow");
+	Minimap Ping("Moscow");
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//

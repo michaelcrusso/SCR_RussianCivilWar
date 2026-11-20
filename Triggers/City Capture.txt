@@ -1,0 +1,521 @@
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Kiev", At least, 6);
+	Bring("Current Player", "Buildings", "Kiev", At most, 0);
+	Bring("Foes", "Men", "Kiev", At most, 0);
+	Bring("Foes", "Buildings", "Kiev", At least, 1);
+	Switch("Partisans Kiev", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Kiev!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Kiev");
+	Minimap Ping("Kiev");
+	Set Switch("Partisans Kiev", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Rostov-on-Don", At least, 6);
+	Bring("Current Player", "Buildings", "Rostov-on-Don", At most, 0);
+	Bring("Foes", "Men", "Rostov-on-Don", At most, 0);
+	Bring("Foes", "Buildings", "Rostov-on-Don", At least, 1);
+	Switch("Partisans Rostov-on-Don", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Rostov-on-Don!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Rostov-on-Don");
+	Minimap Ping("Rostov-on-Don");
+	Set Switch("Partisans Rostov-on-Don", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinoslav", At least, 6);
+	Bring("Current Player", "Buildings", "Yekaterinoslav", At most, 0);
+	Bring("Foes", "Men", "Yekaterinoslav", At most, 0);
+	Bring("Foes", "Buildings", "Yekaterinoslav", At least, 1);
+	Switch("Partisans Yekaterinoslav", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Yekaterinoslav!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Yekaterinoslav");
+	Minimap Ping("Yekaterinoslav");
+	Set Switch("Partisans Yekaterinoslav", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Astrakhan", At least, 6);
+	Bring("Current Player", "Buildings", "Astrakhan", At most, 0);
+	Bring("Foes", "Men", "Astrakhan", At most, 0);
+	Bring("Foes", "Buildings", "Astrakhan", At least, 1);
+	Switch("Partisans Astrakhan", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Astrakhan!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Astrakhan");
+	Minimap Ping("Astrakhan");
+	Set Switch("Partisans Astrakhan", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Baku", At least, 6);
+	Bring("Current Player", "Buildings", "Baku", At most, 0);
+	Bring("Foes", "Men", "Baku", At most, 0);
+	Bring("Foes", "Buildings", "Baku", At least, 1);
+	Switch("Partisans Baku", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Baku!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Baku");
+	Minimap Ping("Baku");
+	Set Switch("Partisans Baku", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Simferopol", At least, 6);
+	Bring("Current Player", "Buildings", "Simferopol", At most, 0);
+	Bring("Foes", "Men", "Simferopol", At most, 0);
+	Bring("Foes", "Buildings", "Simferopol", At least, 1);
+	Switch("Partisans Simferopol", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Simferopol!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Simferopol");
+	Minimap Ping("Simferopol");
+	Set Switch("Partisans Simferopol", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Kharkov", At least, 6);
+	Bring("Current Player", "Buildings", "Kharkov", At most, 0);
+	Bring("Foes", "Men", "Kharkov", At most, 0);
+	Bring("Foes", "Buildings", "Kharkov", At least, 1);
+	Switch("Partisans Kharkov", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Kharkov!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Kharkov");
+	Minimap Ping("Kharkov");
+	Set Switch("Partisans Kharkov", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Pskov", At least, 6);
+	Bring("Current Player", "Buildings", "Pskov", At most, 0);
+	Bring("Foes", "Men", "Pskov", At most, 0);
+	Bring("Foes", "Buildings", "Pskov", At least, 1);
+	Switch("Partisans Pskov", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Pskov!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Pskov");
+	Minimap Ping("Pskov");
+	Set Switch("Partisans Pskov", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Novorossiysk", At least, 6);
+	Bring("Current Player", "Buildings", "Novorossiysk", At most, 0);
+	Bring("Foes", "Men", "Novorossiysk", At most, 0);
+	Bring("Foes", "Buildings", "Novorossiysk", At least, 1);
+	Switch("Partisans Novorossiysk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Novorossiysk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Novorossiysk");
+	Minimap Ping("Novorossiysk");
+	Set Switch("Partisans Novorossiysk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Minsk", At least, 6);
+	Bring("Current Player", "Buildings", "Minsk", At most, 0);
+	Bring("Foes", "Men", "Minsk", At most, 0);
+	Bring("Foes", "Buildings", "Minsk", At least, 1);
+	Switch("Partisans Minsk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Minsk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Minsk");
+	Minimap Ping("Minsk");
+	Set Switch("Partisans Minsk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Perm", At least, 6);
+	Bring("Current Player", "Buildings", "Perm", At most, 0);
+	Bring("Foes", "Men", "Perm", At most, 0);
+	Bring("Foes", "Buildings", "Perm", At least, 1);
+	Switch("Partisans Perm", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the Arctic city of \x006Perm!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Perm");
+	Minimap Ping("Perm");
+	Set Switch("Partisans Perm", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Moscow", At least, 8);
+	Bring("Current Player", "Buildings", "Moscow", At most, 0);
+	Bring("Foes", "Men", "Moscow", At most, 0);
+	Bring("Foes", "Buildings", "Moscow", At least, 1);
+	Switch("Partisans Moscow", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have conquered \x006MOSCOW, THE HEART OF RUSSIA!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Moscow");
+	Minimap Ping("Moscow");
+	Set Switch("Partisans Moscow", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Kazan", At least, 6);
+	Bring("Current Player", "Buildings", "Kazan", At most, 0);
+	Bring("Foes", "Men", "Kazan", At most, 0);
+	Bring("Foes", "Buildings", "Kazan", At least, 1);
+	Switch("Partisans Kazan", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Kazan!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Kazan");
+	Minimap Ping("Kazan");
+	Set Switch("Partisans Kazan", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Archangel'sk", At least, 6);
+	Bring("Current Player", "Buildings", "Archangel'sk", At most, 0);
+	Bring("Foes", "Men", "Archangel'sk", At most, 0);
+	Bring("Foes", "Buildings", "Archangel'sk", At least, 1);
+	Switch("Partisans Archangel'sk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Archangel'sk \x00f, deep in the Russian Taiga!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Archangel'sk");
+	Minimap Ping("Archangel'sk");
+	Set Switch("Partisans Archangel'sk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Ufa", At least, 6);
+	Bring("Current Player", "Buildings", "Ufa", At most, 0);
+	Bring("Foes", "Men", "Ufa", At most, 0);
+	Bring("Foes", "Buildings", "Ufa", At least, 1);
+	Switch("Partisans Ufa", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Ufa!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Ufa");
+	Minimap Ping("Ufa");
+	Set Switch("Partisans Ufa", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Yekaterinburg", At least, 6);
+	Bring("Current Player", "Buildings", "Yekaterinburg", At most, 0);
+	Bring("Foes", "Men", "Yekaterinburg", At most, 0);
+	Bring("Foes", "Buildings", "Yekaterinburg", At least, 1);
+	Switch("Partisans Yekaterinburg", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Yekaterinburg!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Yekaterinburg");
+	Minimap Ping("Yekaterinburg");
+	Set Switch("Partisans Yekaterinburg", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Simbirsk", At least, 6);
+	Bring("Current Player", "Buildings", "Simbirsk", At most, 0);
+	Bring("Foes", "Men", "Simbirsk", At most, 0);
+	Bring("Foes", "Buildings", "Simbirsk", At least, 1);
+	Switch("Partisans Simbirsk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Simbirsk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Simbirsk");
+	Minimap Ping("Simbirsk");
+	Set Switch("Partisans Simbirsk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Samara", At least, 6);
+	Bring("Current Player", "Buildings", "Samara", At most, 0);
+	Bring("Foes", "Men", "Samara", At most, 0);
+	Bring("Foes", "Buildings", "Samara", At least, 1);
+	Switch("Partisans Samara", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Samara!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Samara");
+	Minimap Ping("Samara");
+	Set Switch("Partisans Samara", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Saratov", At least, 6);
+	Bring("Current Player", "Buildings", "Saratov", At most, 0);
+	Bring("Foes", "Men", "Saratov", At most, 0);
+	Bring("Foes", "Buildings", "Saratov", At least, 1);
+	Switch("Partisans Saratov", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Saratov!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Saratov");
+	Minimap Ping("Saratov");
+	Set Switch("Partisans Saratov", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh East", At least, 6);
+	Bring("Current Player", "Buildings", "Voronezh East", At most, 0);
+	Bring("Foes", "Men", "Voronezh East", At most, 0);
+	Bring("Foes", "Buildings", "Voronezh East", At least, 1);
+	Switch("Partisans Voronezh East", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the Eastern portion of \x006Voronezh!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Voronezh East");
+	Minimap Ping("Voronezh East");
+	Set Switch("Partisans Voronezh East", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Voronezh West", At least, 6);
+	Bring("Current Player", "Buildings", "Voronezh West", At most, 0);
+	Bring("Foes", "Men", "Voronezh West", At most, 0);
+	Bring("Foes", "Buildings", "Voronezh West", At least, 1);
+	Switch("Partisans Voronezh West", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the Western portion of \x006Voronezh!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Voronezh West");
+	Minimap Ping("Voronezh West");
+	Set Switch("Partisans Voronezh West", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Smolensk", At least, 6);
+	Bring("Current Player", "Buildings", "Smolensk", At most, 0);
+	Bring("Foes", "Men", "Smolensk", At most, 0);
+	Bring("Foes", "Buildings", "Smolensk", At least, 1);
+	Switch("Partisans Smolensk", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Smolensk!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Smolensk");
+	Minimap Ping("Smolensk");
+	Set Switch("Partisans Smolensk", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Orenburg", At least, 6);
+	Bring("Current Player", "Buildings", "Orenburg", At most, 0);
+	Bring("Foes", "Men", "Orenburg", At most, 0);
+	Bring("Foes", "Buildings", "Orenburg", At least, 1);
+	Switch("Partisans Orenburg", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Orenburg!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Orenburg");
+	Minimap Ping("Orenburg");
+	Set Switch("Partisans Orenburg", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Petrograd", At least, 6);
+	Bring("Current Player", "Buildings", "Petrograd", At most, 0);
+	Bring("Foes", "Men", "Petrograd", At most, 0);
+	Bring("Foes", "Buildings", "Petrograd", At least, 1);
+	Switch("Partisans Petrograd", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have conquered \x006PETROGRAD, BIRTHPLACE OF THE REVOLUTION!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Petrograd");
+	Minimap Ping("Petrograd");
+	Set Switch("Partisans Petrograd", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Pensa", At least, 6);
+	Bring("Current Player", "Buildings", "Pensa", At most, 0);
+	Bring("Foes", "Men", "Pensa", At most, 0);
+	Bring("Foes", "Buildings", "Pensa", At least, 1);
+	Switch("Switch227", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Pensa!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Pensa");
+	Minimap Ping("Pensa");
+	Set Switch("Switch227", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Odessa", At least, 6);
+	Bring("Current Player", "Buildings", "Odessa", At most, 0);
+	Bring("Foes", "Men", "Odessa", At most, 0);
+	Bring("Foes", "Buildings", "Odessa", At least, 1);
+	Switch("Partisans Odessa", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Odessa!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Odessa");
+	Minimap Ping("Odessa");
+	Set Switch("Partisans Odessa", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Vologda", At least, 6);
+	Bring("Current Player", "Buildings", "Vologda", At most, 0);
+	Bring("Foes", "Men", "Vologda", At most, 0);
+	Bring("Foes", "Buildings", "Vologda", At least, 1);
+	Switch("Partisans Vologda", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Vologda!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Vologda");
+	Minimap Ping("Vologda");
+	Set Switch("Partisans Vologda", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Viatka", At least, 6);
+	Bring("Current Player", "Buildings", "Viatka", At most, 0);
+	Bring("Foes", "Men", "Viatka", At most, 0);
+	Bring("Foes", "Buildings", "Viatka", At least, 1);
+	Switch("Partisans Viatka", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Viatka!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Viatka");
+	Minimap Ping("Viatka");
+	Set Switch("Partisans Viatka", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All Players"){
+Conditions:
+	Bring("Current Player", "Men", "Tsaritsyn", At least, 6);
+	Bring("Current Player", "Buildings", "Tsaritsyn", At most, 0);
+	Bring("Foes", "Men", "Tsaritsyn", At most, 0);
+	Bring("Foes", "Buildings", "Tsaritsyn", At least, 1);
+	Switch("Partisans Tsaritsyn", set);
+
+Actions:
+	Display Text Message(Always Display, "\x00fWe have captured the city of \x006Tsaritsyn!");
+	Give Units to Player("Foes", "Current Player", "Buildings", All, "Tsaritsyn");
+	Minimap Ping("Tsaritsyn");
+	Set Switch("Partisans Tsaritsyn", clear);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//

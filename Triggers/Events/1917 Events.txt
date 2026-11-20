@@ -1,0 +1,18 @@
+Trigger("All players"){
+Conditions:
+	Switch("Finnish Civil War", set);
+
+Actions:
+	Display Text Message(Always Display, "\r\n\r\n\r\n\r\n\r\n\x006December, 1917 - \x003Finland\x004 declares independence!\r\n\r\n\r\n\r\n");
+	Minimap Ping("Helsinki");
+	Minimap Ping("Vaasa");
+	Minimap Ping("Kuopio");
+	Minimap Ping("Rovaniemi");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Helsinki");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Vaasa");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Kuopio");
+	Give Units to Player("Player 9", "Player 6", "Buildings", All, "Rovaniemi");
+	Wait(4000);
+}
+
+//-----------------------------------------------------------------//

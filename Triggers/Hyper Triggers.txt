@@ -1,0 +1,218 @@
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Preserve Trigger();
+	Comment("Hyper Trigger");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Preserve Trigger();
+	Comment("Hyper Trigger");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Wait(0);
+	Preserve Trigger();
+	Comment("Hyper Trigger");
+}
+
+//-----------------------------------------------------------------//

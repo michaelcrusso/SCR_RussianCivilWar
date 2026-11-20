@@ -1,0 +1,82 @@
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("\x006Soviet Army", Ally);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 6", Enemy);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 6"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 4", Enemy);
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("\x006Soviet Army"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 4", Ally);
+	Run AI Script("+Vi3");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Always();
+
+Actions:
+	Run AI Script("+Vi3");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 1"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 2", Ally);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 2"){
+Conditions:
+	Always();
+
+Actions:
+	Set Alliance Status("Player 1", Ally);
+	Preserve Trigger();
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("All players"){
+Conditions:
+	Always();
+
+Actions:
+	Set Countdown Timer(Set To, 30);
+}
+
+//-----------------------------------------------------------------//

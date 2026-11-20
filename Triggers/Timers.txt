@@ -1,0 +1,55 @@
+Trigger("Player 4"){
+Conditions:
+	Always();
+
+Actions:
+	Set Deaths("Player 4", "Mineral Chunk (Type 1)", Set to, 12);
+	Comment("Set timer at start to 1 second");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Switch("White Movement 2", set);
+
+Actions:
+	Set Deaths("Player 4", "Mineral Chunk (Type 1)", Subtract, 1);
+	Preserve Trigger();
+	Comment("Timer, 12");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Deaths("Player 4", "Mineral Chunk (Type 1)", At most, 0);
+	Switch("White Movement 2", set);
+
+Actions:
+	Set Deaths("Player 4", "Mineral Chunk (Type 1)", Add, 12);
+	Set Deaths("Player 4", "Mineral Chunk (Type 2)", Add, 1);
+	Set Deaths("Player 4", "Mineral Field (Type 1)", Add, 1);
+	Preserve Trigger();
+	Comment("Type 1 chunk reset second, Type 2 chunk add 1 elapsed second, Type 1 field add general spawn");
+}
+
+//-----------------------------------------------------------------//
+
+Trigger("Player 4"){
+Conditions:
+	Deaths("Player 4", "Mineral Field (Type 1)", Exactly, 60);
+
+Actions:
+	Set Deaths("Player 4", "Mineral Field (Type 1)", Set to, 0);
+	Set Deaths("Player 1", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 2", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 3", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 5", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 7", "Mature Crysalis", Add, 1);
+	Set Deaths("Player 8", "Mature Crysalis", Add, 1);
+	Preserve Trigger();
+	Comment("Activate general spawns, reset spawn counter");
+}
+
+//-----------------------------------------------------------------//
