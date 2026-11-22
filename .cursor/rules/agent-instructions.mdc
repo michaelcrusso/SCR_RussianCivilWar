@@ -1,0 +1,90 @@
+---
+description: TrigScript-first agent instructions for the SC:R Russian Civil War map
+globs:
+alwaysApply: true
+---
+# Agent Instructions for TrigScript StarCraft: Remastered Project
+
+## PROJECT SCOPE
+We are building a StarCraft: Remastered UMS map — **Russian Civil War (1917–1923)** — with **TrigScript** (TypeScript that becomes classic triggers and/or in-game `program()` code via scmJS). Prefer TrigScript for all new trigger/logic work.
+
+Legacy classic **TrigEdit** exports live under `Triggers/` (and the dated `.scx` / `Compiled.txt`). Treat those as migration source, not the long-term authoring path. **epScript / euddraft** may appear as adjacent tooling output (e.g. `eud-patches.eps`); do not expand the epScript surface unless Michael explicitly asks. We are **not** shipping true game mods (no custom `units.dat` MPQ for players); map-local Remastered EUD / TrigScript memory writes are the intended path for unit-table changes.
+
+## AI ASSISTANT ROLE
+- Help write and reason about **TrigScript** (`trigger()` / `program()`), scmJS workflow, and map-local EUD via TrigScript memory APIs.
+- Cite where context came from (local TrigScript docs below, scmJS docs, or mark as best-guess).
+- Do **not** run `build.bat` or assume euddraft. Prefer `scmjs` / editor Save+build when discussing builds; ask Michael to share CLI or editor Output when debugging.
+- During migration, classic TrigEdit / death-counter patterns in `Triggers/` are OK for comparison or porting notes. epScript snippets are for comparison only — do not grow that stack.
+
+## TRIGSCRIPT STRUCTURE
+- Script entry is `main.ts` (and imports); files live in the map archive under `trigscript\` once integrated with scmJS.
+- Prefer `trigger()` for ordinary Trigger-Editor-equivalent logic that must play on every StarCraft version.
+- Prefer `program(() => { … })` for Remastered in-game logic (variables, loops, units, timers, keys/chat). Frame loops typically use `while (true) { …; sleep(frames(1)); }` / `await nextFrame()` — see coming-from-eudplib notes in the TrigScript docs.
+- User helpers belong in modules imported by `main.ts`; there is no euddraft plugin lifecycle (`onPluginStart` / `beforeTriggerExec`).
+
+## MEMORY AND TABLE EDITS (CRITICAL)
+Prefer TrigScript's memory abstractions over raw address soup when a named API exists. Documented in [trigscript-language.md](/home/michael/maps/trigscript-reference/trigscript-language.md) (section "The game's tables and memory"):
+
+1. **`stats(...)`** — named reads/writes of the game's unit / weapon / upgrade / tech / player tables (costs, weapons, some flags, `speed`, names, etc.). Prefer this for table patches that fit the published field list. Only Remastered-validated fields are exposed; hover/docs say what each does. Writes generally last for the rest of the game.
+2. **`memory.*`** — named game values that are not table rows (e.g. `memory.game.frame`, map size, vision countdown). Prefer these over raw addresses when listed.
+3. **`memory(address, comparison, value)` / `setMemory(address, modifier, value)`** — full EUD escape hatch for any address. Use when `stats` / `memory.*` cannot express the change (deep flingy/image/iscript pointer work, undocumented fields, bulk DAT diffs). Keep addresses commented with what they mean; validate on Remastered playtest.
+4. **Do not** propose scmJS **Mod Editor** / `scmjs mod` packs as the shipping path for unit data — that is a real mod, not map-local EUD. Editor data sets may still be used for *drawing* if Michael chooses; distribution remains map-only unless he says otherwise.
+5. Label unverified offset-level claims clearly; prefer named APIs from the local TrigScript reference over folklore. Record engine quirks in [/home/michael/maps/idiosyncrasies.md](/home/michael/maps/idiosyncrasies.md).
+6. DatEdit / Firegraft patches from the eudeditor-linux GUI may export as TrigScript (`eud-patches.trig`) or epScript (`eud-patches.eps`). Prefer the TrigScript export; apply ops with `setMemory`, then lift into `stats()` where metadata allows.
+7. **Unit grade / weapon variance:** do not assume create-time freeze of `units.dat` ground/air weapon pointers on a single unit id (CUnit stores no weapon id; pointer changes are treated as live for all instances of that type). For irregular damage/range recipes that still mass-select cleanly, allocate **distinct unit type IDs** with shared graphics/sounds and different permanent weapon rows / `stats()` (e.g. Rifleman Dmg 11 vs 13). See idiosyncrasies.md.
+
+## ENGINE DELEGATION (PREFERRED PATTERN)
+Prefer handing continuous arithmetic and background simulation to the StarCraft engine; use TrigScript to arm, disarm, and evaluate state—not to re-implement clocks every frame.
+- Prefer native fields/behaviors that already tick (e.g. unit `removeTimer` / timed life, engine HP, orders, pathfinding) over virtual per-frame sidecar timers when SCR allows.
+- Prefer edge + threshold logic and scoped unit queries (`unitsOf` / filters) over full-map unit sweeps every frame unless necessary.
+- Do not invent cloak/energy-regen offset fights or Broodling-style “mana” systems without reading engine-delegation notes in the TrigScript language docs / prior CK strategy writeups if consulted; Broodling’s bar is timed life / `removeTimer`, not spellcaster energy.
+- Validate Remastered behaviour with Michael’s playtest when touching memory-level unit fields.
+
+## PLAYER SLOTS (CRITICAL)
+- **Players 1–8** are the only conventional combatants: humans, computer opponents, and hostile NPC factions that must shoot back and hold vision (e.g. Black Army / Freikorps) belong in this range.
+- **Players 9–12 (extended)** do **not** behave as normal fighting players: they lack ordinary map vision and cannot attack without laborious special-case tricks. Do not assign Black Army or any faction that must return fire to P9–P12.
+- **Shatter / rout ownership:** retreating shattered units are intentionally `give()`n to **Player 12** so they become free kills if not rallied. This is desired pressure — wholesale shatter should hurt. Generals (and similar) may reclaim/rally P12 shattered units back to the owning player. Black Army must use a **different** slot in 1–8 (exact slot TBD; not P12).
+
+## COMMON PITFALLS
+- Do not assume epScript performance model (`EUDVariable` vs light vars, var-to-var trigger cost). TrigScript programs have a different cost model; consult local TrigScript docs and measure when unsure.
+- Do not invent `stats()` fields that are not in the documented table.
+- Prefer `trigger()` when classic-client compatibility matters; `program()` is Remastered-only.
+- Do not revive removed TrigEdit libraries from git history unless explicitly asked.
+- When porting from `Triggers/`, replace death-counter / switch clocks with clearer TrigScript state where practical; preserve intended gameplay pacing.
+- Do not treat P9–P12 as drop-in AI/hostile armies; see Player Slots above.
+
+## REFERENCE DOCUMENTS
+
+Absolute paths under `maps/` (sibling of this project). **TrigScript / scmJS is the primary reference.** Ignore `maps/epscript-reference/` unless Michael asks for a porting comparison.
+
+### Engine idiosyncrasies (local)
+- [/home/michael/maps/idiosyncrasies.md](/home/michael/maps/idiosyncrasies.md) — documented / playtested SCR + TrigScript limitations (DAT latch vs live, P9–P12, unit-grade weapons, etc.). Prefer updating this when we learn something durable.
+
+### TrigScript / scmJS (primary — absolute)
+Local mirror of upstream scmJS markdown (https://docs.scmjs.dev/ / [scm-js/scm-js](https://github.com/scm-js/scm-js) `docs/`):
+
+- [/home/michael/maps/trigscript-reference/trigscript.md](/home/michael/maps/trigscript-reference/trigscript.md) — Quick start, `trigger`/`program`, workspace, testing/Simulate, coming from eudplib, reference
+- [/home/michael/maps/trigscript-reference/trigscript-language.md](/home/michael/maps/trigscript-reference/trigscript-language.md) — Language of programs; **tables and memory**, units, events, tasks
+- [/home/michael/maps/trigscript-reference/trigscript-library.md](/home/michael/maps/trigscript-reference/trigscript-library.md) — Standard library modules (timers, UI, etc.)
+- [/home/michael/maps/trigscript-reference/triggers.md](/home/michael/maps/trigscript-reference/triggers.md) — Classic conditions/actions and EUD notes
+- [/home/michael/maps/trigscript-reference/cli.md](/home/michael/maps/trigscript-reference/cli.md) — `scmjs` CLI, git/CI, in-game tests
+- [/home/michael/maps/trigscript-reference/ai-tools.md](/home/michael/maps/trigscript-reference/ai-tools.md) — MCP / editor AI tooling
+- [/home/michael/maps/trigscript-reference/guide.md](/home/michael/maps/trigscript-reference/guide.md) / [/home/michael/maps/trigscript-reference/installing.md](/home/michael/maps/trigscript-reference/installing.md) — Editor usage and install
+- [/home/michael/maps/trigscript-reference/game-data.md](/home/michael/maps/trigscript-reference/game-data.md) / [/home/michael/maps/trigscript-reference/file-formats.md](/home/michael/maps/trigscript-reference/file-formats.md) / [/home/michael/maps/trigscript-reference/chk-format.md](/home/michael/maps/trigscript-reference/chk-format.md) — Data and file formats
+- [/home/michael/maps/trigscript-reference/README.md](/home/michael/maps/trigscript-reference/README.md) — Index of this mirror
+
+### Legacy in this repo (migration source)
+- `Triggers/` — classic TrigEdit-style trigger text (setup, intro narrative, city capture/siege, generals, timers, events)
+- `Russian Civil War.scx` / `Compiled.txt` — packaged / compiled legacy map artifacts
+- `eud-patches.trig` — prefer over `eud-patches.eps` for map-local memory patches
+
+### epScript (ignored by default)
+- `/home/michael/maps/epscript-reference/` — legacy euddraft/epScript docs; **do not use** unless Michael explicitly asks for a comparison while porting
+
+## WORKFLOW GUIDANCE
+1. Prefer TrigScript docs under `/home/michael/maps/trigscript-reference/` before proposing APIs; check `/home/michael/maps/idiosyncrasies.md` for known engine quirks.
+2. Prefer `stats` / `memory.*` before raw `setMemory`.
+3. Prefer engine-native behaviour over per-frame reimplementation.
+4. Give complete, runnable TrigScript examples that match scmJS docs.
+5. When porting behaviour from `Triggers/`, preserve faction/geography intent; modernize expression in TrigScript rather than copying death-counter idioms wholesale.
+6. When we verify a durable Remastered quirk, add it to idiosyncrasies.md.
